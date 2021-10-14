@@ -8,10 +8,9 @@ const Following = () => {
     return (
         <>
             <section className="create-single-section-container following-page-section">
-                <div className="container">
-                    <div className="row">
+                <div className="container d-flex">
                     <h2>Following</h2>
-
+                    <div className="row w-100">
                         <div className="col-sm-12 mt-2 d-flex justify-content-between">
                             <ul className="nav nav-tabs" id="myTab" role="tablist">
                                 <li className="nav-item" role="presentation">
