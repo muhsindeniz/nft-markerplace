@@ -1,0 +1,92 @@
+import React, { useState } from 'react'
+import {
+    Link
+} from "react-router-dom";
+
+import signInBanner from "../assets/img/custom/signInBanner.png";
+import metamask from "../assets/img/custom/metamask.svg";
+
+import Torus from "../assets/img/icons/custom/Torus.svg";
+import MobileWallet from "../assets/img/icons/custom/MobileWallet.svg";
+import Porttis from "../assets/img/icons/custom/Porttis.svg";
+import Coinbase from "../assets/img/icons/custom/Coinbase.svg";
+import MyEtherWallet from "../assets/img/icons/custom/MyEtherWallet.svg";
+import Fortmatic from "../assets/img/icons/custom/Fortmatic.svg";
+import backArrow from "../assets/img/icons/custom/arrow.svg";
+
+const SignIn = () => {
+
+    return (
+        <>
+            <div className="container-fluid sign-in-container-section">
+                <div className="row">
+                    <div className="col-lg-4 d-sm-none d-lg-block p-0 m-0">
+                        <img src={signInBanner} width="100%" />
+                    </div>
+
+                    <div className="col-sm-12 col-lg-8 d-flex justify-content-center">
+                        <div>
+                            <div className="mt-5 d-flex align-items-center">
+                                <svg width="18" height="18" viewBox="0 0 12 12" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.33464H2.55333L6.28 1.60797L5.33333 0.667969L0 6.0013L5.33333 11.3346L6.27333 10.3946L2.55333 6.66797H12V5.33464Z" fill="#141414" />
+                                </svg>
+
+                                <Link to="/CreateCollectible"><h5 className="ml-3 mb-0">Back</h5></Link>
+                            </div>
+
+                            <div className="mt-5">
+                                <h2>Sign in with your wallet</h2>
+                                <p className="mb-4">Sign in with one of available wallet providers or create a new wallet <br />
+                                    <span className="color-ping"> <b>What is a wallet?</b></span></p>
+
+                                <button className="btn btn-ping signInActiveBtn w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={metamask} width="20px" />
+                                    <div style={{ margin: "auto auto" }}>Sign in with Metamask</div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={Torus} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>Torus</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={MobileWallet} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>Mobile Wallet</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={Porttis} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>Porttis</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={Coinbase} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>Coinbase</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={MyEtherWallet} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>MyEtherWallet</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <img src={Fortmatic} width="20px" />
+                                    <div style={{ margin: "auto auto" }}><b>Fortmatic</b></div>
+                                </button>
+
+                                <button className="btn btn-primary-outline w-100 d-flex align-items-center justify-content-center mb-4">
+                                    <div style={{ margin: "auto auto" }}><b>Show less options</b></div>
+                                </button>
+
+                                <p>We do not own private keys and cannot access your funds without your confirmation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default SignIn
