@@ -73,7 +73,7 @@ const Home = () => {
                                 Starlight
                                 </h1>
 
-                                <h3 className="mb-0 ml-3">(SLXXX)</h3>
+                                <h3 className="mb-0 ml-3">(SLX)</h3>
                             </div>
 
                             <h4 className="mt-3">the NFT Governance Token</h4>
