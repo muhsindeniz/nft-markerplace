@@ -997,3 +997,17 @@ font-size: 12px;
 .putOnMarketplace svg path{
     fill: var(--black-color) !important;
 }
+
+.following-page-section .tab-content .tab-pane{
+    text-align: center;
+}
+
+.following-page-section .following-divition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.following-page-section .nav-tabs .nav-link{
+    align-items: center;
+}

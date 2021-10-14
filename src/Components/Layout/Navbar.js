@@ -90,13 +90,15 @@ const Navbar = () => {
 
     return (
         <>
-            {location.pathname === "/Profile" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/Buy" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/CreateCollectibleEdit" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/SignIn" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/Token" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/Activity" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
-            {location.pathname === "/FullScreenImage" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""}
+            {
+                location.pathname === "/Profile" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/Buy" ?  <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/CreateCollectibleEdit" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/SignIn" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/Token" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/Activity" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
+                location.pathname === "/FullScreenImage" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""
+            }
 
             <header>
                 <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{position: location.pathname === "/Profile" ? "relative" : 
