@@ -32,7 +32,7 @@ import topSellerUser10 from "../assets/img/custom/topSellerUser10.png";
 import shape from "../assets/img/icons/custom/Shape.svg";
 import { Menu, Dropdown, Select } from 'antd';
 import { Link } from "react-router-dom";
-import { GlobalSettingsContext } from '../Contexts/GlobalSettingsContext';
+import { motion } from "framer-motion"
 
 import { Tabs } from 'antd';
 
@@ -43,6 +43,11 @@ const { Option } = Select;
 SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 const Home = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
     const menu = (
         <Menu>
@@ -64,13 +69,16 @@ const Home = () => {
     return (
         <>
 
-            <section className="nft-start">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="nft-start">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 col-lg-6 pb-5">
                             <div className="d-flex align-items-center">
                                 <h1 className="section-title mb-0">
-                                Starlight
+                                    Starlight
                                 </h1>
 
                                 <h3 className="mb-0 ml-3">(SLX)</h3>
@@ -211,10 +219,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
-            <section className="artWorkWeekSection">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="artWorkWeekSection">
                 <div className="container-fluid">
                     <div className="w-100 d-flex justify-content-between align-items-center">
                         <h3><b>Artwork of the week</b></h3>
@@ -275,7 +286,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
 
@@ -283,7 +294,10 @@ const Home = () => {
 
 
 
-            <section className="topSeller">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="topSeller">
                 <div className="container-fluid">
                     <div className="w-100 headerSelect">
                         <h3><b>Top Sellers</b></h3>
@@ -445,12 +459,15 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
 
 
-            <section className="topSeller">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="topSeller">
                 <div className="container-fluid">
                     <div className="w-100 headerSelect">
                         <h3><b>Top Buyers</b></h3>
@@ -612,14 +629,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
-
-
-
-
-            <section className="liveAuction live-auction-none-mobile proile-liked-filter">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction live-auction-none-mobile proile-liked-filter">
                 <div className="container-fluid">
                     <div className="w-100">
                         <h3><b>Live Auction</b></h3>
@@ -747,10 +763,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
-            <section className="liveAuction-web-none liveAuction proile-liked-filter mobile-filter-live-auc">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction-web-none liveAuction proile-liked-filter mobile-filter-live-auc">
                 <div className="container-fluid">
                     <div className="w-100">
                         <h3><b>Live Auction</b></h3>
@@ -882,10 +901,13 @@ const Home = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-            </section>
+            </motion.section>
 
 
-            <section className="liveAuction live-auction-none-mobile">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction live-auction-none-mobile">
                 <div className="container-fluid">
                     <div className="w-100">
                         <h3><b>Hot Bids</b></h3>
@@ -1017,11 +1039,14 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
 
-            <section className="liveAuction-web-none liveAuction proile-liked-filter mobile-filter-live-auc">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction-web-none liveAuction proile-liked-filter mobile-filter-live-auc">
                 <div className="container-fluid">
                     <div className="w-100">
                         <h3><b>Hot Bids</b></h3>
@@ -1157,11 +1182,14 @@ const Home = () => {
 
                     </Swiper>
                 </div>
-            </section>
+            </motion.section>
 
 
 
-            <section className="topSeller live-auction-none-mobile">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="topSeller live-auction-none-mobile">
                 <div className="container-fluid">
                     <div className="w-100 headerSelect">
                         <h3><b>Hot Collections</b></h3>
@@ -1241,111 +1269,114 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
 
 
 
 
-            <section className="topSeller liveAuction-web-none">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="topSeller liveAuction-web-none">
                 <div className="container-fluid">
                     <div className="w-100 headerSelect">
                         <h3><b>Hot Collections</b></h3>
                     </div>
                     <div className="topSellerContent">
-                    <Swiper
-                        style={{ marginTop: 15 }}
-                        spaceBetween={10}
-                        slidesPerView={1}
-                        navigation={true}
-                    >
-                        <SwiperSlide>
-                        <div className="topSellerCard mr-3">
-                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
-                                <div className="topSellectProfilePicture">
-                                    <img src={topSellerUser3} width="100%" alt="" />
-                                    <div className="confirmation">
-                                        <i className="fas fa-check"></i>
+                        <Swiper
+                            style={{ marginTop: 15 }}
+                            spaceBetween={10}
+                            slidesPerView={1}
+                            navigation={true}
+                        >
+                            <SwiperSlide>
+                                <div className="topSellerCard mr-3">
+                                    <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                    <div className="topSellectProfilePicture">
+                                        <img src={topSellerUser3} width="100%" alt="" />
+                                        <div className="confirmation">
+                                            <i className="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div className="topSellerUserInfo">
+                                        <h5><b>Courtney Henry</b></h5>
+                                        <small>$1,403</small>
                                     </div>
                                 </div>
-                                <div className="topSellerUserInfo">
-                                    <h5><b>Courtney Henry</b></h5>
-                                    <small>$1,403</small>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
 
 
-                        <SwiperSlide>
-                        <div className="topSellerCard mr-3">
-                                <img className="seller-banner-image" src={topSeller2} width="100%" alt="" />
-                                <div className="topSellectProfilePicture">
-                                    <img src={topSellerUser2} width="100%" alt="" />
-                                    <div className="confirmation">
-                                        <i className="fas fa-check"></i>
+                            <SwiperSlide>
+                                <div className="topSellerCard mr-3">
+                                    <img className="seller-banner-image" src={topSeller2} width="100%" alt="" />
+                                    <div className="topSellectProfilePicture">
+                                        <img src={topSellerUser2} width="100%" alt="" />
+                                        <div className="confirmation">
+                                            <i className="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div className="topSellerUserInfo">
+                                        <h5><b>Courtney Henry</b></h5>
+                                        <small>$1,403</small>
                                     </div>
                                 </div>
-                                <div className="topSellerUserInfo">
-                                    <h5><b>Courtney Henry</b></h5>
-                                    <small>$1,403</small>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
 
 
-                        <SwiperSlide>
-                        <div className="topSellerCard mr-3">
-                                <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
-                                <div className="topSellectProfilePicture">
-                                    <img src={topSellerUser3} width="100%" alt="" />
-                                    <div className="confirmation">
-                                        <i className="fas fa-check"></i>
+                            <SwiperSlide>
+                                <div className="topSellerCard mr-3">
+                                    <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                    <div className="topSellectProfilePicture">
+                                        <img src={topSellerUser3} width="100%" alt="" />
+                                        <div className="confirmation">
+                                            <i className="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div className="topSellerUserInfo">
+                                        <h5><b>Courtney Henry</b></h5>
+                                        <small>$1,403</small>
                                     </div>
                                 </div>
-                                <div className="topSellerUserInfo">
-                                    <h5><b>Courtney Henry</b></h5>
-                                    <small>$1,403</small>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
 
 
-                        <SwiperSlide>
-                        <div className="topSellerCard mr-3">
-                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
-                                <div className="topSellectProfilePicture">
-                                    <img src={topSellerUser4} width="100%" alt="" />
-                                    <div className="confirmation">
-                                        <i className="fas fa-check"></i>
+                            <SwiperSlide>
+                                <div className="topSellerCard mr-3">
+                                    <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                    <div className="topSellectProfilePicture">
+                                        <img src={topSellerUser4} width="100%" alt="" />
+                                        <div className="confirmation">
+                                            <i className="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div className="topSellerUserInfo">
+                                        <h5><b>Courtney Henry</b></h5>
+                                        <small>$1,403</small>
                                     </div>
                                 </div>
-                                <div className="topSellerUserInfo">
-                                    <h5><b>Courtney Henry</b></h5>
-                                    <small>$1,403</small>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
 
-                        <SwiperSlide>
-                        <div className="topSellerCard mr-3">
-                                <img className="seller-banner-image" src={topSeller5} width="100%" alt="" />
-                                <div className="topSellectProfilePicture">
-                                    <img src={topSellerUser5} width="100%" alt="" />
-                                    <div className="confirmation">
-                                        <i className="fas fa-check"></i>
+                            <SwiperSlide>
+                                <div className="topSellerCard mr-3">
+                                    <img className="seller-banner-image" src={topSeller5} width="100%" alt="" />
+                                    <div className="topSellectProfilePicture">
+                                        <img src={topSellerUser5} width="100%" alt="" />
+                                        <div className="confirmation">
+                                            <i className="fas fa-check"></i>
+                                        </div>
+                                    </div>
+                                    <div className="topSellerUserInfo">
+                                        <h5><b>Courtney Henry</b></h5>
+                                        <small>$1,403</small>
                                     </div>
                                 </div>
-                                <div className="topSellerUserInfo">
-                                    <h5><b>Courtney Henry</b></h5>
-                                    <small>$1,403</small>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
 
 
@@ -1354,12 +1385,19 @@ const Home = () => {
 
 
 
-            <section className="liveAuction quickExplore">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction quickExplore">
                 <div className="container-fluid">
 
                     <div className="d-flex justify-content-between mb-3">
                         <h4><b>Quick Explore</b></h4>
-                        <button className="btn-primary-outline-big d-web-none m-0"><img src={shape} alt="" /></button>
+                        <button className="btn-primary-outline-big d-web-none m-0 quick-explore-filter-buton">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
+                            </svg>
+                        </button>
                     </div>
 
                     <div className="w-100 headerSelect d-flex justify-content-between">
@@ -2824,10 +2862,12 @@ const Home = () => {
                             </TabPane>
                         </Tabs>
 
-                        <button className="btn-primary-outline-big mt-0 d-mobile-none"><img src={shape} alt="" /> Filter</button>
-
+                        <button className="btn-primary-outline-big mt-0 d-mobile-none quick-explore-filter-buton">
+                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
+                            </svg>
+                            Filter</button>
                     </div>
-
                 </div>
 
                 <div className="w-100 mt-5 pl-3 pr-3">
@@ -2835,8 +2875,7 @@ const Home = () => {
                         <button className="btn-primary-outline w-100">View all</button>
                     </div>
                 </div>
-            </section>
-
+            </motion.section>
 
         </>
     )

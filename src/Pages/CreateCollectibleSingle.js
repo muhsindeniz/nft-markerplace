@@ -11,12 +11,18 @@ import CreateCollectibleMultiplePopup from '../Components/Popup/CreateCollectibl
 import { Select } from 'antd';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
+import { motion } from "framer-motion"
 
 const { Option } = Select;
 
 SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 const CreateCollectibleSingle = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
     const [singleCollectionPopup, setSingleCollectionPopup] = useState(false);
 
@@ -27,7 +33,10 @@ const CreateCollectibleSingle = () => {
                 singleCollectionPopup && <CreateCollectibleMultiplePopup setSingleCollectionPopup={setSingleCollectionPopup} />
             }
 
-            <section className="create-single-section-container">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="create-single-section-container">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 d-flex align-items-center">
@@ -121,63 +130,63 @@ const CreateCollectibleSingle = () => {
                                 Upload file to preview your brand new NFT
                             </div>
                         </div>
-                        
-                        <div className="position-relative col-sm-12">
-                        <div className="d-flex justify-content-between mt-5">
-                            <b><h5 className="color-ping">Choose collection</h5></b>
-                        </div>
 
-                            <div className="d-flex">
-                            <div className="putOnMarketplace border-radius border" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
-                                <img src={plus} width="40" alt="" />
-                                <b> Create</b>
-                                <div><small className="color-gray">ERC-721</small></div>
+                        <div className="position-relative col-sm-12">
+                            <div className="mt-5">
+                                <b><h5 className="color-ping">Choose collection</h5></b>
                             </div>
 
-                            <Swiper slidesPerView={4} navigation={true}>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
-                                        <img src={darkcircle} width="40" alt="" />
-                                        <div><small className="color-gray">---</small></div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
+                            <div className="d-flex">
+                                <div className="putOnMarketplace border-radius btn-primary-outline-responsive" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
+                                    <img src={plus} width="40" alt="" />
+                                    <b> Create</b>
+                                    <div><small className="color-gray">ERC-721</small></div>
+                                </div>
+
+                                <Swiper slidesPerView={4} navigation={true}>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="putOnMarketplace ml-3 border-radius btn-primary-outline-responsive">
+                                            <img src={darkcircle} width="40" alt="" />
+                                            <div><small className="color-gray">---</small></div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
 
                         </div>
@@ -236,7 +245,7 @@ const CreateCollectibleSingle = () => {
                     </div>
 
                 </div>
-            </section>
+            </motion.section>
 
         </>
     )

@@ -91,47 +91,49 @@ const Navbar = () => {
     return (
         <>
             {
-                location.pathname === "/Profile" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/Buy" ?  <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/CreateCollectibleEdit" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/SignIn" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/Token" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/Activity" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : 
-                location.pathname === "/FullScreenImage" ? <div style={{backgroundColor: "#6300FF"}} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""
+                location.pathname === "/Profile" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                    location.pathname === "/Buy" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                        location.pathname === "/CreateCollectibleEdit" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                            location.pathname === "/SignIn" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                                location.pathname === "/Token" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                                    location.pathname === "/Activity" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
+                                        location.pathname === "/FullScreenImage" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""
             }
 
             <header>
-                <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{position: location.pathname === "/Profile" ? "relative" : 
-                                                                                            location.pathname === "/Buy" ?  "relative" : 
-                                                                                            location.pathname === "/CreateCollectibleEdit" ? "relative" : 
-                                                                                            location.pathname === "/SignIn" ? "relative" : 
-                                                                                            location.pathname === "/Token" ? "relative" : 
-                                                                                            location.pathname === "/Activity" ? "relative" : 
-                                                                                            location.pathname === "/FullScreenImage" ? "relative" : "absolute"}}>
+                <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{
+                    position: location.pathname === "/Profile" ? "relative" :
+                        location.pathname === "/Buy" ? "relative" :
+                            location.pathname === "/CreateCollectibleEdit" ? "relative" :
+                                location.pathname === "/SignIn" ? "relative" :
+                                    location.pathname === "/Token" ? "relative" :
+                                        location.pathname === "/Activity" ? "relative" :
+                                            location.pathname === "/FullScreenImage" ? "relative" : "absolute"
+                }}>
                     <div className="container-fluid menu-reverse">
 
                         <div className="d-flex">
 
                             <div className="d-lg-none d-sm-block mr-2">
-                                <a href="javascript:void(0)" className="nav-link nav-dark-button">
+                                <a className="nav-link nav-dark-button">
                                     <img src={searchLine} alt="" />
                                 </a>
                             </div>
 
                             <div className="d-lg-none d-sm-block mr-2">
-                                <a href="javascript:void(0)" className="nav-link nav-dark-button" onClick={() => activeMode()}>
+                                <a className="nav-link nav-dark-button" onClick={() => activeMode()}>
                                     <img src={vectorLogo} alt="" />
                                 </a>
                             </div>
 
                             <div className="navbar-toggler nav-dark-button" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <a href="javascript:void(0)" className="nav-link nav-dark-button mr-2">
+                                <a className="nav-link nav-dark-button mr-2">
                                     <img src={menu4Line} className="navbar-hamburger-show" alt="" />
                                 </a>
                             </div>
 
                             <div className="d-lg-none d-sm-block mr-2">
-                                <a href="javascript:void(0)" className="nav-link p-0">
+                                <a className="nav-link p-0">
                                     <img src={userProfilePictures} width="36" height="36" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
 
                                     {
@@ -183,7 +185,7 @@ const Navbar = () => {
                                                         </div>
                                                     </div>
 
-                                                    <a href="javascript:void(0)" className="nav-link nav-dark-button">
+                                                    <a className="nav-link nav-dark-button">
                                                         <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fillRule="evenodd" clipRule="evenodd" d="M6.02452 4.24267L6.96719 3.3L3.66719 0L0.367188 3.3L1.31052 4.24267L3.00052 2.552V11.3333H4.33385V2.552L6.02452 4.24267ZM10.3352 12.0001L13.6352 8.70008L12.6925 7.75741L11.0018 9.44808V0.666748H9.66849L9.66916 9.44808L7.97782 7.75741L7.03516 8.70008L10.3352 12.0001Z" fill="black" />
                                                         </svg>
@@ -226,7 +228,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link to="/"> <a href="javascript:void(0)" className="navbar-brand"><img src={fabaLogo} width="30" alt="" /> <span className="ml-2">Starlight</span></a></Link>
+                        <Link to="/" className="navbar-brand"> <img src={fabaLogo} width="30" alt="" /> <span className="ml-2">Starlight</span></Link>
 
                         <div className="collapse navbar-collapse" id="mainNav">
 
@@ -240,24 +242,24 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item ">
-                                    <Link to="/Profile"><a href="javascript:void(0)" className="nav-link">My Items</a></Link>
+                                    <Link to="/Profile" className="nav-link">My Item</Link>
                                 </li>
 
                                 <li className="nav-item ">
-                                    <Link to="/Following"><a href="javascript:void(0)" className="nav-link">Following</a></Link>
+                                    <Link to="/Following" className="nav-link">Following</Link>
                                 </li>
 
                                 <li className="nav-item ">
-                                <Link to="/Activity"><a href="javascript:void(0)" className="nav-link">Activity</a></Link>
+                                    <Link to="/Activity" className="nav-link">Activity</Link>
                                 </li>
 
                                 <li className="nav-item ">
-                                    <Link to="/Faq"><a href="javascript:void(0)" className="nav-link">How it works</a></Link>
+                                    <Link to="/Faq" className="nav-link">How it works</Link>
                                 </li>
 
 
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="javascript:void(0)" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+                                    <a className="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
                                     <div className="dropdown-menu" aria-labelledby="servicesDropdown">
 
                                         <ul className="menu-dropdown">
@@ -280,19 +282,15 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item d-sm-none d-lg-block">
-                                    <Link to="/CreateCollectible">
-                                        <a href="javascript:void(0)" className="nav-link">
-                                            <button className="btn btn-primary">Create</button>
-                                        </a>
+                                    <Link to="/CreateCollectible" className="nav-link">
+                                        <button className="btn btn-primary">Create</button>
                                     </Link>
                                 </li>
 
                                 {
                                     location.pathname === "/" ? <li className="nav-item d-sm-none d-lg-block m-0">
-                                        <Link to="/SignIn">
-                                            <a href="javascript:void(0)" className="nav-link">
-                                                <button className="btn btn-primary-outline">Sign In</button>
-                                            </a>
+                                        <Link to="/SignIn" className="nav-link">
+                                            <button className="btn btn-primary-outline">Sign In</button>
                                         </Link>
                                     </li> : ""
                                 }
@@ -302,7 +300,7 @@ const Navbar = () => {
                                 <li className="nav-item">
 
                                     {
-                                        location.pathname !== "/" ? <a href="javascript:void(0)" className="nav-link d-sm-none d-lg-block nav-dark-button mr-2 notification-popup-outline position-relative">
+                                        location.pathname !== "/" ? <a className="nav-link d-sm-none d-lg-block nav-dark-button mr-2 notification-popup-outline position-relative">
                                             <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={() => { setNotificationPopup(!notificationPopup); document.body.style.overflow = "scroll"; }}>
                                                 <path d="M8.91211 9.16675H15.3288L7.07878 21.0834V12.8334H0.662109L8.91211 0.916748V9.16675Z" fill="black" />
                                             </svg>
@@ -350,7 +348,7 @@ const Navbar = () => {
 
 
                                     {
-                                        location.pathname !== "/" ? <a href="javascript:void(0)" className="d-sm-none d-lg-block nav-link p-0 nav-dark-button mr-2 position-relative">
+                                        location.pathname !== "/" ? <a className="d-sm-none d-lg-block nav-link p-0 nav-dark-button mr-2 position-relative">
                                             <img src={userProfilePictures} width="100%" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
 
                                             {
@@ -402,7 +400,7 @@ const Navbar = () => {
                                                                 </div>
                                                             </div>
 
-                                                            <a href="javascript:void(0)" className="nav-link nav-dark-button">
+                                                            <a className="nav-link nav-dark-button">
                                                                 <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path fillRule="evenodd" clipRule="evenodd" d="M6.02452 4.24267L6.96719 3.3L3.66719 0L0.367188 3.3L1.31052 4.24267L3.00052 2.552V11.3333H4.33385V2.552L6.02452 4.24267ZM10.3352 12.0001L13.6352 8.70008L12.6925 7.75741L11.0018 9.44808V0.666748H9.66849L9.66916 9.44808L7.97782 7.75741L7.03516 8.70008L10.3352 12.0001Z" fill="black" />
                                                                 </svg>
@@ -444,7 +442,7 @@ const Navbar = () => {
                                         </a> : ""
                                     }
 
-                                    <a href="javascript:void(0)" className="nav-link nav-dark-button mr-2 d-sm-none d-lg-block" onClick={() => activeMode()}>
+                                    <a className="nav-link nav-dark-button mr-2 d-sm-none d-lg-block" onClick={() => activeMode()}>
                                         {
                                             theme === true ? <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9.00056 4.49219C6.5146 4.49219 4.49219 6.51499 4.49219 9.00096C4.49219 11.4869 6.5146 13.5097 9.00056 13.5097C11.4861 13.5097 13.5089 11.4873 13.5089 9.00096C13.5089 6.5146 11.4861 4.49219 9.00056 4.49219Z" fill="white" />
@@ -467,10 +465,8 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item d-sm-block d-lg-none menu-create-width">
-                                    <Link to="/CreateCollectible" className="w-100">
-                                        <a href="javascript:void(0)" className="nav-link">
-                                            <button className="btn btn-primary">Create</button>
-                                        </a>
+                                    <Link to="/CreateCollectible" className="w-100 nav-link">
+                                        <button className="btn btn-primary">Create</button>
                                     </Link>
                                 </li>
 

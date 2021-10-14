@@ -8,12 +8,18 @@ import topSellerUser3 from "../assets/img/custom/topSellerUser3.png";
 import topSellerUser4 from "../assets/img/custom/topSellerUser4.png";
 import profileBanner from "../assets/img/custom/profileBanner.png";
 import userProfilePictures from "../assets/img/custom/userProfilePictures.png";
+import { motion } from "framer-motion"
 
 import { Menu, Dropdown, Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 
 const Profile = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
     const menu = (
         <Menu>
@@ -34,7 +40,10 @@ const Profile = () => {
 
 
     return (
-        <section className="profile-pictures-infos">
+        <motion.section
+        initial="hidden"
+        animate="visible"
+        variants={variants} className="profile-pictures-infos">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-12">
@@ -234,7 +243,7 @@ const Profile = () => {
                                     <div className="topSeller">
                                         <div className="container-fluid">
                                             <div className="w-100 d-flex justify-content-end mb-4">
-                                                <button class="profile-activity-filter-mobile d-web-none"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white"></rect><path clip-rule="evenodd" d="M16.5 19V20.6667H31.5V19H16.5ZM22.3333 29H25.6667V27.3333H22.3333V29ZM29 24.8333H19V23.1667H29V24.8333Z" fill="black"></path><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="black"></rect></svg></button>
+                                                <button class="profile-activity-filter-mobile d-web-none"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white"></rect><path clipRule="evenodd" d="M16.5 19V20.6667H31.5V19H16.5ZM22.3333 29H25.6667V27.3333H22.3333V29ZM29 24.8333H19V23.1667H29V24.8333Z" fill="black"></path><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="black"></rect></svg></button>
                                             </div>
 
                                             <div className="topSellerContent">
@@ -532,7 +541,7 @@ const Profile = () => {
                                     <div className="topSeller">
                                         <div className="container-fluid">
                                             <div className="w-100 d-flex justify-content-end mb-4">
-                                                <button class="profile-activity-filter-mobile d-web-none"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white"></rect><path clip-rule="evenodd" d="M16.5 19V20.6667H31.5V19H16.5ZM22.3333 29H25.6667V27.3333H22.3333V29ZM29 24.8333H19V23.1667H29V24.8333Z" fill="black"></path><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="black"></rect></svg></button>
+                                                <button class="profile-activity-filter-mobile d-web-none"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white"></rect><path clipRule="evenodd" d="M16.5 19V20.6667H31.5V19H16.5ZM22.3333 29H25.6667V27.3333H22.3333V29ZM29 24.8333H19V23.1667H29V24.8333Z" fill="black"></path><rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="black"></rect></svg></button>
                                             </div>
 
                                             <div className="topSellerContent">
@@ -690,7 +699,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

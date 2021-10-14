@@ -22,10 +22,10 @@ import Token from './Pages/Token';
 import Activity from './Pages/Activity';
 import Following from './Pages/Following';
 import FullScreenImage from './Pages/FullScreenImage';
+import Cryptoloria from './Pages/Cryptoloria';
 import CreateCollectibleMultiplePopup from './Components/Popup/CreateCollectibleMultiplePopup';
 import FinishedCollectiblePopup from './Components/Popup/FinishedCollectiblePopup';
 import PlaceABidPopup from './Components/Popup/PlaceABidPopup';
-import Cryptoloria from './Pages/Cryptoloria';
 import PlaceABidFollowPopup from './Components/Popup/PlaceABidFollowPopup';
 import CoinConverPopup from './Components/Popup/CoinConverPopup';
 

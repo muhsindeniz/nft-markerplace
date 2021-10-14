@@ -1,13 +1,24 @@
 import React from 'react'
 import { Menu, Dropdown, Tabs } from 'antd';
+import { motion } from "framer-motion"
 
 const { TabPane } = Tabs;
 
 const Following = () => {
 
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+
+
     return (
         <>
-            <section className="create-single-section-container following-page-section">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants}
+                className="create-single-section-container following-page-section">
                 <div className="container-fluid">
                     <div className="following-divition">
                         <h2>Following</h2>
@@ -78,7 +89,7 @@ const Following = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </>
     )
 }

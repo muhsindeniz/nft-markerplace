@@ -1,10 +1,20 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 const CreateCollectibleEdit = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+
     return (
         <>
-            <section className="create-single-section-container">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="create-single-section-container">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 d-flex align-items-center">
@@ -143,7 +153,7 @@ const CreateCollectibleEdit = () => {
                     </div>
 
                 </div>
-            </section>
+            </motion.section>
 
         </>
     )

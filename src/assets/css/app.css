@@ -319,6 +319,7 @@ footer section .footer-in-email {
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.01);
     border-radius: 24px;
     padding: 0 20px;
+    height: 50px;
     font-size: 14px;
 }
 
@@ -599,6 +600,14 @@ font-size: 12px;
 .ant-dropdown-menu{
     background-color: var(--bg-white) !important;
     color: var(--black-color) !important;
+}
+
+.quick-explore-filter-buton svg path{ 
+    fill: var(--black-color) !important;
+}
+
+.quick-explore-filter-buton svg{ 
+    margin-right: 10px !important;
 }
 
 .ant-dropdown-menu-item:hover{

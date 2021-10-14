@@ -11,6 +11,7 @@ import CreateCollectibleMultiplePopup from '../Components/Popup/CreateCollectibl
 import { Select } from 'antd';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
+import { motion } from "framer-motion"
 
 const { Option } = Select;
 
@@ -18,6 +19,11 @@ const { Option } = Select;
 SwiperCore.use([Keyboard, Pagination, Navigation]);
 
 const CreateCollectibleMulti = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
     const [singleCollectionPopup, setSingleCollectionPopup] = useState(false);
 
@@ -28,7 +34,10 @@ const CreateCollectibleMulti = () => {
                 singleCollectionPopup && <CreateCollectibleMultiplePopup setSingleCollectionPopup={setSingleCollectionPopup} />
             }
 
-            <section className="create-single-section-container">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="create-single-section-container">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 d-flex align-items-center">
@@ -253,7 +262,7 @@ const CreateCollectibleMulti = () => {
                     </div>
 
                 </div>
-            </section>
+            </motion.section>
 
         </>
     )

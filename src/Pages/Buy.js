@@ -7,6 +7,7 @@ import topSellerUser4 from "../assets/img/custom/topSellerUser4.png";
 import FinishedCollectiblePopup from '../Components/Popup/PlaceABidPopup';
 import PlaceABidFollowPopup from '../Components/Popup/PlaceABidFollowPopup';
 import { Menu, Dropdown, Select } from 'antd';
+import { motion } from "framer-motion"
 
 const Buy = () => {
     const [singleCollectionPopup, setSingleCollectionPopup] = useState(false);
@@ -36,6 +37,12 @@ const Buy = () => {
         </Menu>
     );
 
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+
+
     return (
         <>
 
@@ -47,7 +54,10 @@ const Buy = () => {
                 singlePopup && <PlaceABidFollowPopup setSinglePopup={setSinglePopup} />
             }
 
-            <section className="buy-art-work-week">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="buy-art-work-week">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 col-lg-5">
@@ -157,7 +167,7 @@ const Buy = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                              <div className="w-100 d-flex justify-content-between mb-3">
+                                            <div className="w-100 d-flex justify-content-between mb-3">
                                                 <div className="d-flex">
                                                     <div><img src={userTick} width="36" alt="" /></div>
                                                     <div className="ml-4">
@@ -282,7 +292,7 @@ const Buy = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
         </>
     )
