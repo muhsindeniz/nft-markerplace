@@ -50,7 +50,7 @@ const CreateCollectibleSingle = () => {
                             <h2>Create single collectible</h2>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6">
+                        <div className="col-sm-12 col-lg-6 mb-4 pt-4">
                             <b className="mt-5">Upload File</b>
 
                             <div>
@@ -124,7 +124,7 @@ const CreateCollectibleSingle = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6 ">
+                        <div className="col-sm-12 col-lg-6 mt-4">
                             <h5><b>Preview</b> </h5>
                             <div className="upload-file-container text-gray d-flex justify-content-center align-items-center p-5">
                                 Upload file to preview your brand new NFT

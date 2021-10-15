@@ -33,6 +33,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--btn-light-white', '#232323');
             document.documentElement.style.setProperty('--text-light-color', '#8D9299');
             document.documentElement.style.setProperty('--notification-ping-bg', "#402F5B");
+            document.documentElement.style.setProperty('--footer-input-bg', "#C7C7C7");
 
         } else {
             document.documentElement.style.setProperty('--bg-main', '#FCFCFC');
@@ -48,6 +49,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--btn-light-white', '#fff');
             document.documentElement.style.setProperty('--text-light-color', '#111');
             document.documentElement.style.setProperty('--notification-ping-bg', "#F7F2FF");
+            document.documentElement.style.setProperty('--footer-input-bg', "#fff");
         }
     }, [theme])
 
@@ -69,6 +71,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--text-light-color', '#8D9299');
             document.documentElement.style.setProperty('--gray-bg-color', '#fff');
             document.documentElement.style.setProperty('--notification-ping-bg', "#402F5B");
+            document.documentElement.style.setProperty('--footer-input-bg', "#C7C7C7");
         } else {
             document.documentElement.style.setProperty('--bg-main', '#FCFCFC');
             document.documentElement.style.setProperty('--bg-card', '#fff');
@@ -84,6 +87,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--text-light-color', '#111');
             document.documentElement.style.setProperty('--gray-bg-color', '#8D9299');
             document.documentElement.style.setProperty('--notification-ping-bg', "#F7F2FF");
+            document.documentElement.style.setProperty('--footer-input-bg', "#fff");
         }
     }
 

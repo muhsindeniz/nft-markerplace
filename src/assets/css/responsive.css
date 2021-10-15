@@ -16,6 +16,19 @@
     }
     .nft-start-counter {
         justify-content: center !important;
+        margin-top: 20px !important;
+    }
+
+    .order-sm-1{
+        order: 1 !important;
+    }
+
+    .order-sm-2{
+        order: 2 !important;
+    }
+
+    .order-sm-3{
+        order: 3 !important;
     }
 
     .token-page-section .connect-wallet-section{
@@ -50,6 +63,11 @@
         display: flex;
         justify-content: center;
     }
+
+    .nft-start .home-nft-slider-section{
+        align-items: center !important;
+    }
+
     .d-mobile-none {
         display: none !important;
     }
@@ -259,6 +277,10 @@
 
 .menu-create-width button{
     width: 100% !important;
+}
+
+.quickExplore h3{
+    font-size: 20px !important;
 }
 
 .following-page-section .following-divition{

@@ -1,5 +1,5 @@
 import React from 'react'
-import fabaLogo from "../../assets/img/custom/Faba.png";
+import fabaLogo from "../../assets/img/custom/x.svg";
 import { Menu, Dropdown, Select } from 'antd';
 import { Link } from "react-router-dom";
 
@@ -8,19 +8,19 @@ const { Option } = Select;
 const Footer = () => {
     return (
         <footer>
-            <section>
+            <section className="m-0">
                 <div className="container-fluid">
                     <div className="row footer-column-flex-border pb-4 mb-5">
-                        <div className="col-sm-6 col-lg-3 footer-column mb-4">
+                        <div className="col-sm-6 col-lg-4 footer-column mb-4">
                             <div className="footer-title d-flex align-items-center">
-                                <img src={fabaLogo} width="60" alt="" />
-                                <h6 className="ml-2">Bravado
-                                    <div className="color-red">NFT</div>
-                                </h6>
+                                <img src={fabaLogo} width="43" alt="" />
+                                <h3 className="ml-2 text-dark"> Starlight
+                                    {/* <div className="color-red">NFT</div> */}
+                                </h3>
                             </div>
 
                             <ul className="footer-menu">
-                                <li>The Eden Smart Chain is a low latency, cross platform smart contract chain for digital assets, fiat on-ramping and dApps.</li>
+                                <li><span className="color-gray">The Eden Smart Chain is a low latency, cross platform smart contract chain for digital assets, fiat on-ramping and dApps.</span></li>
                             </ul>
 
                             <div className="w-100 d-flex footer-in-mail-container">
@@ -55,7 +55,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="col-sm-6 col-lg-3 mb-4 d-mobile-none">
+                        <div className="col-sm-6 col-lg-2 mb-4 d-mobile-none">
                             <div className="footer-title">
                                 <h6>Language</h6>
                             </div>
@@ -130,7 +130,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="d-web-none">© 2021, All Rights Reserved.</div>
+                        <div className="d-web-none"><small>© 2021, All Rights Reserved.</small></div>
                     </div>
                 </div>
             </section>

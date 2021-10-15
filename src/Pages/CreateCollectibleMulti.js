@@ -40,14 +40,14 @@ const CreateCollectibleMulti = () => {
                 variants={variants} className="create-single-section-container">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-12 d-flex align-items-center">
+                        <div className="col-sm-12 d-flex align-items-center mb-4">
                             <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M14 7.33341H4.55333L8.28 3.60675L7.33333 2.66675L2 8.00008L7.33333 13.3334L8.27333 12.3934L4.55333 8.66675H14V7.33341Z" fill="#141414" />
                             </svg>
-                            <Link to="/CreateCollectible"><h5 className="ml-3 mb-0">Back</h5></Link>
+                            <Link to="/CreateCollectible"><h5 className="ml-3">Back</h5></Link>
                         </div>
 
-                        <div className="col-sm-12 mt-5">
+                        <div className="col-sm-12 mt-4 mb-4">
                             <h2>Create multiple collectable</h2>
                         </div>
 
@@ -113,7 +113,7 @@ const CreateCollectibleMulti = () => {
 
                         <div className="col-sm-12 col-lg-6 ">
                             <h5><b>Preview</b> </h5>
-                            <div className="border border-radius text-gray d-flex justify-content-center align-items-center p-5">
+                            <div className="border border-radius mt-4 text-gray d-flex justify-content-center align-items-center p-5">
                                 Upload file to preview your brand new NFT
                             </div>
                         </div>

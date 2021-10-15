@@ -220,10 +220,6 @@ section{
     color: var(--black-text) !important;
 }
 
-footer section .footer-in-email{
-    background-color: var(--gray-bg);
-}
-
 .navbar-search input {
     border: none;
     outline: none;

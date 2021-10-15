@@ -49,7 +49,14 @@ section h3 b, .topSellerUserInfo h5{
     color: var(--black-color) !important;
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 !important;
+}
 
 .buy-art-work-week h1, 
 .buy-art-work-week h2, 
@@ -144,7 +151,7 @@ section h3 b, .topSellerUserInfo h5{
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-    color: var(--black-color) !important;
+    color: var(--white-color) !important;
 }
 
 
@@ -240,8 +247,12 @@ footer .footer-title {
     margin-bottom: 25px;
 }
 
+footer .footer-title h3{
+    color: var(--black-text) !important;
+}
+
 footer .footer-title h6{
-    color: var(--black-text);
+    color: var(--black-text) !important;
 }
 
 footer .footer-menu li {
@@ -321,6 +332,7 @@ footer section .footer-in-email {
     padding: 0 20px;
     height: 50px;
     font-size: 14px;
+    background-color: var(--footer-input-bg);
 }
 
 .artWorkWeekSection img {
@@ -369,6 +381,8 @@ footer section .footer-in-email {
     align-items: center;
 }
 
+
+
 .topSellerCard {
     background-color: var(--bg-white);
     border-bottom-left-radius: 15px;
@@ -416,6 +430,8 @@ footer section .footer-in-email {
 
 .liveAuction .liveAuction-card-container .live-image img {
     border-radius: 15px;
+    max-height: 206px;
+    object-fit: cover;
 }
 
 .liveAuction .live-image {
@@ -443,7 +459,7 @@ footer section .footer-in-email {
     cursor: pointer;
     padding: 5px 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: -16px;
     right: 15px;
     border: 0.2px solid #EDECEC;
     box-sizing: border-box;
@@ -497,6 +513,11 @@ footer section .footer-in-email {
 
 .ant-tabs-top > .ant-tabs-nav::before{
     border: none !important;
+}
+
+.quickExplore .ant-tabs-tab-active{
+    background-color: var(--black-color) !important;
+    color: var(--bg-white) !important;
 }
 
 .quickExplore .ant-tabs-tab{
@@ -568,9 +589,10 @@ footer section .footer-in-email {
 
 .slider-conter-absolute{
     position: absolute;
-    top: -55px;
+    top: -75px;
     border-radius: 15px;
-    width: 80%;
+    height: 100px;
+    width: 70%;
     left: 50%;
     transform: translate(-50%);
     padding: 15px;
@@ -578,7 +600,12 @@ footer section .footer-in-email {
     backdrop-filter: blur(50px);
     text-align: left;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.margin-50{
+    margin-top: 100px !important;
 }
 
 .nft-start .slider-content .slider-conter-absolute h6{
@@ -625,7 +652,7 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
     top: 0;
     right: 0;
@@ -636,7 +663,7 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
     top: -9px;
     right: -15px;
@@ -647,12 +674,15 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
     top: -20px;
     right: -30px;
 }
 
+.btn:hover{
+    color: var(--black-color) !important;
+}
 
 .liveAuction-card-container h6{
     color: var(--black-text) !important;
@@ -669,6 +699,10 @@ font-size: 12px;
     text-align: center;
 }
 
+footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border: solid 1px var(--gray-color) !important;
+}
+
 .topSeller .section-select-filter{
     margin-left: 20px;
 }
@@ -682,7 +716,7 @@ font-size: 12px;
 }
 
 .topSeller .topSellerUserInfo h5 b{
-    color: var(--pink-color) !important;
+    color: var(--black-color) !important;
 }
 
 .create-single-section-container .putOnMarketplace:hover{
@@ -987,17 +1021,23 @@ font-size: 12px;
     color: var(--black-text);
 }
 
-.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    border: solid 1px var(--black-color);
-}
-
-.following-page-section .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border: solid 1px var(--pink-color);
-}
-
 .following-page-section svg{
     margin-right: 15px;
 }
+
+.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: var(--black-color) !important;
+    color: var(--white-color) !important;
+}
+
+.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active svg path{
+    fill: var(--white-color) !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color: var(--black-color) !important;
+}
+
 
 .following-page-section .btn-primary-following svg path{
     fill: var(--black-text);
@@ -1019,4 +1059,41 @@ font-size: 12px;
 
 .following-page-section .nav-tabs .nav-link{
     align-items: center;
+}
+ 
+.nft-start .home-nft-slider-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.quickExplore .nav-tabs{
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: initial;
+    width: 100%;
+    height: 50px;
+    overflow-x: auto;
+}
+
+.quickExplore .nav-tabs .nav-link{
+    background-color: var(--gray-bg);
+    color: var(--gray-color);
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.order-1{
+    order: 1;
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-3{
+    order: 3;
 }
