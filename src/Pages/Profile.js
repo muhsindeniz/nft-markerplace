@@ -43,7 +43,7 @@ const Profile = () => {
         <motion.section
         initial="hidden"
         animate="visible"
-        variants={variants} className="profile-pictures-infos mt-3">
+        variants={variants} className="profile-pictures-infos mt-5">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-12">
