@@ -107,7 +107,7 @@ const Cryptoloria = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-7 col-lg-7 position-relative">
+                        <div className="col-sm-12 col-md-7 col-lg-7 position-relative home-artwork-week-day">
                             <div className="d-flex overflow-auto">
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
@@ -164,7 +164,7 @@ const Cryptoloria = () => {
                         <h3><b>Hidden Bids</b></h3>
                     </div>
 
-                    <div className="w-100 headerSelect d-flex justify-content-between">
+                    <div className="w-100 headerSelect">
                         <div className="row">
                             <div className="col-sm-12 col-lg-3">
                                 <div className="liveAuction-card-container cryptoloria-blue-images">
