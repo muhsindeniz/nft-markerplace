@@ -45,19 +45,6 @@
     color: var(--text-light-color);
 }
 
-section h3 b, .topSellerUserInfo h5{
-    color: var(--black-color) !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-    margin: 0 !important;
-}
-
 .buy-art-work-week h1, 
 .buy-art-work-week h2, 
 .buy-art-work-week h3, 
@@ -144,14 +131,21 @@ h6{
     fill: var(--pink-color);
 }
 
+.profile-pictures-infos .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap{
+border-bottom: solid 1px var(--gray-color);
+}
+
+.ant-tabs-tab + .ant-tabs-tab div{
+    color: var(--gray-color);
+}
 
 .profile-pictures-infos .btn-gray{
-    background: var(--gray-color);
+    background: var(--gray-bg);
     border: solid 1px #fff;
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-    color: var(--white-color) !important;
+    color: var(--black-color) !important;
 }
 
 
@@ -303,22 +297,6 @@ footer .footer-social-media-container li:hover {
     font-weight: 400;
 }
 
-section {
-    padding: 50px 70px;
-}
-
-.color-red {
-    color: var(--red-color);
-}
-
-.color-orange {
-    color: var(--light-red);
-}
-
-.color-ping {
-    color: var(--pink-color);
-}
-
 footer div{
     color: var(--black-text);
 }
@@ -360,6 +338,13 @@ footer section .footer-in-email {
     font-size: 22px;
     color: #9D9D9D;
     padding: 0 10px;
+    cursor: pointer;
+}
+
+.footer-social-icons svg{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
     cursor: pointer;
 }
 
@@ -472,7 +457,7 @@ footer section .footer-in-email {
 }
 
 .liveAuction .live-user-list img {
-    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .liveAuction .live-user-list .live-card-tick {
@@ -680,13 +665,10 @@ font-size: 12px;
     right: -30px;
 }
 
-.btn:hover{
-    color: var(--black-color) !important;
-}
 
 .liveAuction-card-container h6{
     color: var(--black-text) !important;
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 
 .topSeller .ant-select:not(.ant-select-customize-input) .ant-select-selector{
@@ -788,6 +770,11 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     padding: 0 20px;
 }
 
+
+.border-gray{
+    border: solid 1px var(--gray-color) !important;
+}
+
 .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
     box-shadow: none !important;
 }
@@ -796,15 +783,15 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     width: 200px !important;
 }
 
-.gray-color{
-    background-color: var(--gray-bg) !important;
+.profile-usr-name-h3-size h3{
+    font-size: 24px !important;
 }
 
 .profile-pictures-infos .profile-pictures-cover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 350px;
+    min-height: 378px;
 }
 
 .flashLightFill{
@@ -901,18 +888,23 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     border-radius: 50%;
 }
 
+.ant-select-item-option-content{
+    padding: 6px;
+}
+
 .ant-select-item-option-selected:not(.ant-select-item-option-disabled)::after{
     content: '\2713';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
     border-radius: 50%;
     background-color: #6300FF;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 5px;
+    right: 10px;
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -1086,14 +1078,14 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     margin-right: 15px;
 }
 
-.order-1{
-    order: 1;
+.ant-input:focus{
+    background-color: red !important;
 }
 
-.order-2{
-    order: 2;
+.following-page-section .tab-content{
+    min-height: 350px;
 }
 
-.order-3{
-    order: 3;
+.following-page-section .nav-link svg path{
+    fill: var(--black-color) !important;
 }

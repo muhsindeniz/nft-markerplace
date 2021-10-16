@@ -65,7 +65,7 @@ const Buy = () => {
                         </div>
                         <div className="col-sm-12 col-lg-7 ">
                             <div className="buy-art-work-week-card border-radius">
-                                <div className="d-flex justify-content-between">
+                                <div className="d-flex justify-content-between align-items-center">
                                     <h1>Artwork of the week</h1>
                                     <div className="d-flex">
                                         <div className="card-heart-icon"><i className="fas fa-heart"></i> 24</div>
@@ -77,9 +77,9 @@ const Buy = () => {
                                     </div>
                                 </div>
 
-                                <div>
+                                <div className="mt-4">
                                     <span className="text-secondary">Highest bid </span>
-                                    <span className="color-ping"><b>0.066 wETH</b></span>
+                                    <span className="color-ping">0.066 wETH</span>
                                 </div>
 
                                 <p className="mt-3">
@@ -91,31 +91,31 @@ const Buy = () => {
                                         <b className="text-secondary">Creator</b>
                                         <div className="mt-3">
                                             <img src={userTick} width="36" alt="" />
-                                            <span><b>Courtney</b></span>
+                                            <span className="ml-3"><b>Courtney</b></span>
                                         </div>
                                     </div>
-                                    <div className="ml-4">
+                                    <div className="ml-5">
                                         <b className="text-secondary">Creator</b>
                                         <div className="mt-3">
                                             <img src={logo} width="36" alt="" />
-                                            <span><b>EdenSwap</b></span>
+                                            <span className="ml-3"><b>EdenSwap</b></span>
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <button className="btn-primary-outline-responsive mt-4">
-                                    <img src={start} width="16" alt="" /> 10% of sales will go to creator
+                                <button className="btn-primary-outline-responsive mt-4 pt-2 pb-2 pl-3 pr-3 text-dark d-flex align-items-center">
+                                    <img src={start} className="mr-2" width="16" alt="" /> 10% of sales will go to creator
                                 </button>
 
 
                                 <div className="mt-5">
                                     <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                         <li className="nav-item">
-                                            <a className="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Bids</a>
+                                            <a className="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Owner</a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Details</a>
+                                            <a className="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Bids</a>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">History</a>
@@ -132,7 +132,7 @@ const Buy = () => {
                                                     </div>
                                                 </div>
 
-                                                <button className="btn-primary" style={{ height: "45px" }}>Buy</button>
+                                                <button className="btn-ping" style={{ height: "45px" }}>Buy</button>
                                             </div>
 
                                             <div className="w-100 d-flex justify-content-between mb-3">
@@ -238,7 +238,7 @@ const Buy = () => {
 
 
                                 <div className="d-flex mt-4 justify-content-center mt-5 buy-font">
-                                    <div className="pr-2 border-right">
+                                    <div className="pr-3 border-right">
                                         <span className="text-secondary">Highest bid by </span><span><b>The first of art</b></span>
                                         <div className="d-flex mt-2">
                                             <div>
@@ -251,7 +251,7 @@ const Buy = () => {
                                         </div>
                                     </div>
 
-                                    <div className="pl-2 ">
+                                    <div className="pl-3 ">
                                         <div className="text-secondary">Auction ends in</div>
                                         <div className="d-flex mt-3">
                                             <div className="mr-3">

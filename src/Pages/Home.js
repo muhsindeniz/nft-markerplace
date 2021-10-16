@@ -237,7 +237,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-7 col-lg-7 position-relative d-flex flex-column align-items-stretch justify-content-between">
+                        <div className="col-sm-12 col-md-7 col-lg-7 home-artwork-week-day position-relative d-flex flex-column align-items-stretch justify-content-between">
                             <div className="d-flex overflow-auto">
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
@@ -3151,13 +3151,7 @@ const Home = () => {
                         </div>
                     </div>
 
-
-
                 </div>
-
-
-
-
 
                 <div className="w-100 mt-5 pl-3 pr-3">
                     <div className="view-all-items">

@@ -34,6 +34,8 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--text-light-color', '#8D9299');
             document.documentElement.style.setProperty('--notification-ping-bg', "#402F5B");
             document.documentElement.style.setProperty('--footer-input-bg', "#C7C7C7");
+            document.documentElement.style.setProperty('--bg-main-white', "#121212");
+           
 
         } else {
             document.documentElement.style.setProperty('--bg-main', '#FCFCFC');
@@ -50,6 +52,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--text-light-color', '#111');
             document.documentElement.style.setProperty('--notification-ping-bg', "#F7F2FF");
             document.documentElement.style.setProperty('--footer-input-bg', "#fff");
+            document.documentElement.style.setProperty('--bg-main-white', "#fff");
         }
     }, [theme])
 
@@ -72,6 +75,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--gray-bg-color', '#fff');
             document.documentElement.style.setProperty('--notification-ping-bg', "#402F5B");
             document.documentElement.style.setProperty('--footer-input-bg', "#C7C7C7");
+            document.documentElement.style.setProperty('--bg-main-white', "#121212");
         } else {
             document.documentElement.style.setProperty('--bg-main', '#FCFCFC');
             document.documentElement.style.setProperty('--bg-card', '#fff');
@@ -88,13 +92,14 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--gray-bg-color', '#8D9299');
             document.documentElement.style.setProperty('--notification-ping-bg', "#F7F2FF");
             document.documentElement.style.setProperty('--footer-input-bg', "#fff");
+            document.documentElement.style.setProperty('--bg-main-white', "#fff");
         }
     }
 
 
     return (
         <>
-            {
+            {/* {
                 location.pathname === "/Profile" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
                     location.pathname === "/Buy" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
                         location.pathname === "/CreateCollectibleEdit" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
@@ -102,10 +107,10 @@ const Navbar = () => {
                                 location.pathname === "/Token" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
                                     location.pathname === "/Activity" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> :
                                         location.pathname === "/FullScreenImage" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""
-            }
+            } */}
 
             <header>
-                <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{
+                {/* <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{
                     position: location.pathname === "/Profile" ? "relative" :
                         location.pathname === "/Buy" ? "relative" :
                             location.pathname === "/CreateCollectibleEdit" ? "relative" :
@@ -113,7 +118,8 @@ const Navbar = () => {
                                     location.pathname === "/Token" ? "relative" :
                                         location.pathname === "/Activity" ? "relative" :
                                             location.pathname === "/FullScreenImage" ? "relative" : "absolute"
-                }}>
+                }}> */}
+                 <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar">
                     <div className="container-fluid menu-reverse">
 
                         <div className="d-flex">

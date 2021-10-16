@@ -66,7 +66,7 @@ const CollectibleMultiInfo = () => {
 
                             <div className="prize-single-collectible">
                                 <input type="text" placeholder="Enter price for one piece " />
-                                <span className="text-gray ">ETH</span>
+                                <span className="color-gray ">ETH</span>
                             </div>
 
                             <div className="mt-4"><b><span className="color-gray">Service fee </span> <span>2.5%</span></b></div>
@@ -120,7 +120,7 @@ const CollectibleMultiInfo = () => {
 
                             <div className="prize-single-collectible">
                                 <input type="text" placeholder="10" />
-                                <span className="text-gray ">%</span>
+                                <span className="color-gray ">%</span>
                             </div>
 
                             <div className="mt-2"><small><span className="color-gray">Suggested: 0%, 10%, 20%,30% Maximum is 50%</span></small></div>
@@ -134,7 +134,7 @@ const CollectibleMultiInfo = () => {
 
                             <div className="prize-single-collectible">
                                 <input type="text" placeholder="Eg. 10”" />
-                                <span className="text-gray ">%</span>
+                                <span className="color-gray ">%</span>
                             </div>
 
                             <div className="mt-2"><small><span className="color-gray">Amount of tokens</span></small></div>
@@ -183,7 +183,7 @@ const CollectibleMultiInfo = () => {
                           <button className="btn-ping  w-100">Create Item</button>
                         </div>
 
-                        <div className="mt-4 text-gray text-center">
+                        <div className="mt-4 color-gray text-center">
                             <span>Unsaved Changes </span> <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd" clipRule="evenodd" d="M1.66602 9.99984C1.66602 14.6023 5.39685 18.3332 9.99935 18.3332C14.6018 18.3332 18.3327 14.6023 18.3327 9.99984C18.3327 5.39734 14.6018 1.6665 9.99935 1.6665C5.39685 1.6665 1.66602 5.39734 1.66602 9.99984ZM16.6657 9.99988C16.6657 13.6818 13.6809 16.6665 9.99902 16.6665C6.31712 16.6665 3.33236 13.6818 3.33236 9.99988C3.33236 6.31798 6.31712 3.33321 9.99902 3.33321C13.6809 3.33321 16.6657 6.31798 16.6657 9.99988ZM10.8324 12.4999V14.1665H9.16569V12.4999H10.8324ZM10.8327 11.6665V11.129C12.2024 10.7207 13.0746 9.38034 12.8932 7.96267C12.7118 6.54499 11.53 5.46749 10.1017 5.41735C8.6733 5.36721 7.41891 6.3592 7.13851 7.76066L8.77351 8.08816C8.90257 7.44247 9.51039 7.00762 10.1632 7.09395C10.8159 7.18029 11.2898 7.75821 11.2466 8.41525C11.2033 9.07229 10.6578 9.58312 9.99934 9.58316C9.53911 9.58316 9.16601 9.95626 9.16601 10.4165V11.6665H10.8327Z" fill="#979797"/>
                                 </svg>
