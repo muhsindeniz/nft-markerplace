@@ -238,7 +238,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-7 col-lg-7 home-artwork-week-day position-relative d-flex flex-column align-items-stretch justify-content-between">
-                            <div className="d-flex overflow-auto">
+                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
                                     <div className="art-work-description-container">
@@ -259,7 +259,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex overflow-auto">
+                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek4} width="230" alt="" />
                                     <div className="art-work-description-container">
@@ -307,7 +307,7 @@ const Home = () => {
                     </div>
 
                     <div className="topSellerContent mt-5">
-                        <div className="d-flex justify-content-between overflow-auto mb-4">
+                        <div className="d-flex justify-content-between overflow-auto mb-4 w-100">
                             <div className="topSellerCard mr-3">
                                 <img className="seller-banner-image" src={topSeller6} width="240" alt="" />
                                 <div className="topSellectProfilePicture">
@@ -380,8 +380,8 @@ const Home = () => {
 
                         </div>
 
-                        <div className="d-flex overflow-auto">
-                            <div className="d-flex overflow-auto">
+                        <div className="d-flex overflow-auto justify-content-between w-100">
+                            <div className="d-flex overflow-auto justify-content-between w-100">
                                 <div className="topSellerCard mr-3">
                                     <img className="seller-banner-image" src={topSeller6} width="240" alt="" />
                                     <div className="topSellectProfilePicture">
@@ -477,7 +477,7 @@ const Home = () => {
                     </div>
 
                     <div className="topSellerContent mt-5">
-                        <div className="d-flex justify-content-between overflow-auto mb-4">
+                        <div className="d-flex justify-content-between overflow-auto mb-4 w-100">
                             <div className="topSellerCard mr-3">
                                 <img className="seller-banner-image" src={topSeller4} width="240" alt="" />
                                 <div className="topSellectProfilePicture">
@@ -550,8 +550,8 @@ const Home = () => {
 
                         </div>
 
-                        <div className="d-flex overflow-auto">
-                            <div className="d-flex overflow-auto">
+                        <div className="d-flex overflow-auto justify-content-between w-100">
+                            <div className="d-flex overflow-auto justify-content-between w-100">
                                 <div className="topSellerCard mr-3">
                                     <img className="seller-banner-image" src={topSeller6} width="240" alt="" />
                                     <div className="topSellectProfilePicture">
@@ -1192,7 +1192,7 @@ const Home = () => {
                     </div>
 
                     <div className="topSellerContent mt-5">
-                        <div className="d-flex overflow-auto mb-4">
+                        <div className="d-flex overflow-auto justify-content-between w-100 mb-4">
                             <div className="topSellerCard mr-3">
                                 <img className="seller-banner-image" src={topSeller4} width="240" alt="" />
                                 <div className="topSellectProfilePicture">
