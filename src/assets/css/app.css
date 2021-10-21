@@ -578,7 +578,7 @@ footer section .footer-in-email {
     top: -75px;
     border-radius: 15px;
     height: 100px;
-    width: 70%;
+    width: 83%;
     left: 50%;
     transform: translate(-50%);
     padding: 15px;
@@ -871,12 +871,10 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     fill: var(--black-color);
 }
 
-.place-a-bid-popup-container .popup-width{
+.place-a-bid-popup-container .popup-width, .coin-covert-popup-container{
     width: 488px;
-}
-
-.coin-covert-popup-container{
-    width: 488px;
+    max-height: calc(100vh - 40px) !important;
+    overflow-y: auto;
 }
 
 .popup-close-btn-exit{
@@ -1061,7 +1059,7 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 .nft-start .home-nft-slider-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -1093,4 +1091,19 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 
 .following-page-section .nav-link svg path{
     fill: var(--black-color) !important;
+}
+
+.place-a-bid-popup-container .popup-close-btn-outline{
+    width: 48px;
+    height: 48px;
+    border: solid 1px var(--gray-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -17px -25px 0 0;
+}
+
+.nft-start .home-nft-slider-section .swiper-wrapper .swiper-slide{
+    width: 100%;
 }

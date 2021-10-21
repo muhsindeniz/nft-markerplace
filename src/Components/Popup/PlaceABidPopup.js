@@ -17,9 +17,9 @@ const PlaceABidPopup = (props) => {
                 initial="hidden"
                 animate="visible"
                 variants={variants} className="place-a-bid-popup-container">
-                <div className="border-radius bg-white p-4 popup-width">
+                <div className="border-radius bg-white popup-width" style={{padding: "48px"}}>
                     <div className="d-flex justify-content-between cursor-pointer">
-                        <h3><b>Place a bid</b></h3>
+                        <h3>Place a bid</h3>
                         <div className="popup-close-btn-outline" onClick={() => { setSingleCollectionPopup(false); document.body.style.overflow = "scroll"; }}>
                             <i class="fas fa-times"></i>
                         </div>

@@ -16,9 +16,9 @@ const CoinConverPopup = () => {
             initial="hidden"
             animate="visible"
             variants={variants} className="place-a-bid-popup-container">
-            <div className="border-radius bg-white p-4 popup-width coin-covert-popup-container">
+            <div className="border-radius bg-white popup-width coin-covert-popup-container" style={{padding: "48px"}}>
                 <div className="d-flex justify-content-between cursor-pointer">
-                    <h3><b>Convert</b></h3>
+                    <h3>Convert</h3>
                 </div>
 
                 <div className="mt-2">

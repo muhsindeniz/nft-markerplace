@@ -71,43 +71,47 @@ const Home = () => {
                 variants={variants} className="nft-start margin-50">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-12 col-lg-6 pb-5 home-nft-slider-section">
+                        <div className="col-sm-12 col-lg-6 home-nft-slider-section">
                             <div className="d-flex align-items-start flex-column">
                                 <div className="d-flex align-items-end">
-                                    <h1 className="section-title mb-0 ml-0" style={{fontSize: "72px"}}>
+                                    <h1 className="section-title mb-0 ml-0" style={{ fontSize: "72px" }}>
                                         Starlight
                                     </h1>
 
-                                    <h3 className="mb-0 ml-3" style={{fontSize: "32px"}}>(SLX)</h3>
+                                    <h3 className="mb-0 ml-3" style={{ fontSize: "32px" }}>(SLX)</h3>
                                 </div>
-                                <h4 className="mt-2" style={{fontSize: "40px"}}>the NFT Governance Token</h4>
+                                <h4 className="mt-2" style={{ fontSize: "40px" }}>the NFT Governance Token</h4>
                             </div>
 
-                            <h6 style={{fontSize: "18px"}}>
+                            <h6 style={{ fontSize: "18px" }}>
                                 A perfect place to buy and sell digital art, as well as updating <br /> your NFT collection.
                             </h6>
 
-                            <button className="btn-primary">Explore all</button>
 
-                            <div className="d-flex nft-start-counter">
-                                <div className="border-right pr-4">
-                                    <h4 className="m-0 p-0 text-center"><b>123k</b></h4>
-                                    <small className="pl-2">User</small>
-                                </div>
+                            <div className="d-flex nft-start-counter align-items-start flex-column justify-content-between">
 
-                                <div className="pl-4 pr-4">
-                                    <h4 className="m-0 p-0 text-center"><b>156k</b></h4>
-                                    <small className="pl-2">Artwork</small>
-                                </div>
+                                <button className="btn-primary">Explore all</button>
 
-                                <div className="border-left pl-4 pr-4">
-                                    <h4 className="m-0 p-0 text-center"><b>200k</b></h4>
-                                    <small className="pl-2">Artist</small>
+                                <div className="d-flex mt-4">
+                                    <div className="border-right pr-4">
+                                        <h4 className="m-0 p-0 text-center"><b>123k</b></h4>
+                                        <small className="pl-2">User</small>
+                                    </div>
+
+                                    <div className="pl-4 pr-4">
+                                        <h4 className="m-0 p-0 text-center"><b>156k</b></h4>
+                                        <small className="pl-2">Artwork</small>
+                                    </div>
+
+                                    <div className="border-left pl-4 pr-4">
+                                        <h4 className="m-0 p-0 text-center"><b>200k</b></h4>
+                                        <small className="pl-2">Artist</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-lg-6">
+                        <div className="col-sm-12 col-lg-5">
                             <div className="bg-lines"></div>
 
                             <Swiper
@@ -123,14 +127,14 @@ const Home = () => {
                                         <div className="slider-conter-absolute d-flex">
                                             <div className="d-flex flex-column">
                                                 <small>Current Bid</small>
-                                                <div className="d-flex">
-                                                    <h6>2.20 ETH</h6>
+                                                <div className="d-flex align-items-end">
+                                                    <h5><b>2.20 ETH</b></h5>
                                                     <small className="ml-2">($3,321,45)</small>
                                                 </div>
                                             </div>
-                                            <div className="ml-2">
+                                            <div style={{ margin: "-10px 0" }}>
                                                 <small>Remaining time</small>
-                                                <h6>23H : 11M: 32S</h6>
+                                                <h5 style={{ fontSize: "18px", marginTop: "10px" }}>23H : 11M: 32S</h5>
                                             </div>
                                         </div>
                                         <div className="ml-3 d-flex flex-column position-relative">
