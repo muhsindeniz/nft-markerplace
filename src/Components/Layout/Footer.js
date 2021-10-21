@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="row footer-column-flex-border pb-4 mb-5">
                         <div className="col-sm-6 col-lg-4 footer-column mb-4">
                             <div className="footer-title d-flex align-items-center">
-                                <img src={fabaLogo} width="43" alt="" />
+                                <img src={fabaLogo} width="36" alt="" />
                                 <h3 className="ml-2 text-dark"> Starlight
                                     {/* <div className="color-red">NFT</div> */}
                                 </h3>

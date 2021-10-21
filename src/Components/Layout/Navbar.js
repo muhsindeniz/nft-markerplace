@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import searchLine from "../../assets/img/icons/custom/search-line.svg";
-import flashLightFill from "../../assets/img/icons/custom/flashlight-fill.svg";
 import vectorLogo from "../../assets/img/custom/Vector.svg";
 import menu4Line from "../../assets/img/icons/custom/menu-4-line.svg";
-import userProfilePictures from "../../assets/img/icons/custom/userProfilePictures.png";
+import userProfilePictures from "../../assets/img/icons/custom/userNav.svg";
 import fabaLogo from "../../assets/img/custom/x.svg";
 import { useLocation, Link } from "react-router-dom";
 import userTick from "../../assets/img/icons/custom/logo.svg";
 import grayPp from "../../assets/img/custom/grayPp.png";
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -35,7 +35,7 @@ const Navbar = () => {
             document.documentElement.style.setProperty('--notification-ping-bg', "#402F5B");
             document.documentElement.style.setProperty('--footer-input-bg', "#C7C7C7");
             document.documentElement.style.setProperty('--bg-main-white', "#121212");
-           
+
 
         } else {
             document.documentElement.style.setProperty('--bg-main', '#FCFCFC');
@@ -109,7 +109,7 @@ const Navbar = () => {
                                         location.pathname === "/FullScreenImage" ? <div style={{ backgroundColor: "#6300FF" }} className="p-3 d-flex justify-content-center text-white">DesignerName - choose yours and earn x3 Starlight rewards!</div> : ""
             } */}
 
-            <header>
+            <header className="pl-4 pr-4">
                 {/* <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar" style={{
                     position: location.pathname === "/Profile" ? "relative" :
                         location.pathname === "/Buy" ? "relative" :
@@ -119,32 +119,32 @@ const Navbar = () => {
                                         location.pathname === "/Activity" ? "relative" :
                                             location.pathname === "/FullScreenImage" ? "relative" : "absolute"
                 }}> */}
-                 <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar">
-                    <div className="container-fluid menu-reverse">
+                <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar">
+                    <div className="container-fluid menu-reverse container-fluid menu-reverse pl-5 pr-5">
 
                         <div className="d-flex">
 
-                            <div className="d-lg-none d-sm-block mr-2">
+                            <div className="d-lg-none d-sm-block mr-3">
                                 <a className="nav-link nav-dark-button">
                                     <img src={searchLine} alt="" />
                                 </a>
                             </div>
 
-                            <div className="d-lg-none d-sm-block mr-2">
+                            <div className="d-lg-none d-sm-block mr-3">
                                 <a className="nav-link nav-dark-button" onClick={() => activeMode()}>
                                     <img src={vectorLogo} alt="" />
                                 </a>
                             </div>
 
-                            <div className="navbar-toggler nav-dark-button" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <div className="navbar-toggler nav-dark-button mr-3" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <a className="nav-link nav-dark-button mr-2">
                                     <img src={menu4Line} className="navbar-hamburger-show" alt="" />
                                 </a>
                             </div>
 
-                            <div className="d-lg-none d-sm-block mr-2">
+                            <div className="d-lg-none d-sm-block ">
                                 <a className="nav-link p-0">
-                                    <img src={userProfilePictures} width="36" height="36" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
+                                    <FaUser width="18" height="18" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
 
                                     {
                                         openProfileDropMenu === false ? "" : <div className="openProfileDropMenu">
@@ -218,8 +218,8 @@ const Navbar = () => {
                                                 <h6 className="m-0">Manage funds</h6>
 
                                                 <div className="custom-control custom-switch">
-                                                    <input type="checkbox" defaultChecked className="custom-control-input" id="customSwitch2" />
-                                                    <label className="custom-control-label" htmlFor="customSwitch2"></label>
+                                                    <input type="checkbox" defaultChecked className="custom-control-input" id="profileSwitch3" />
+                                                    <label className="custom-control-label" htmlFor="profileSwitch3"></label>
                                                 </div>
                                             </div>
 
@@ -238,11 +238,11 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link to="/" className="navbar-brand"> <img src={fabaLogo} width="30" alt="" /> <span className="ml-2">Starlight</span></Link>
+                        <Link to="/" className="navbar-brand m-0"> <img src={fabaLogo} width="24" alt="" /> <span style={{ fontSize: "22px", marginLeft: "10px", fontFamily: 'LoRes 9 Plus OT Narrow' }}>Starlight</span></Link>
 
                         <div className="collapse navbar-collapse" id="mainNav">
 
-                            <ul className="navbar-nav ml-auto mr-auto nav-fill">
+                            <ul className="navbar-nav nav-fill align-items-center">
 
                                 <li className="nav-item">
                                     <div className="navbar-search">
@@ -271,7 +271,6 @@ const Navbar = () => {
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
                                     <div className="dropdown-menu" aria-labelledby="servicesDropdown">
-
                                         <ul className="menu-dropdown">
                                             <Link to="/Token"><li>Token</li></Link>
                                             <Link to="/"><li>Discussion</li></Link>
@@ -281,7 +280,10 @@ const Navbar = () => {
                                             <ul className="nav-bar-social-items mt-3 border-top">
                                                 <li><i className="fab fa-twitter"></i></li>
                                                 <li><i className="fab fa-telegram-plane"></i></li>
-                                                <li><i className="fab fa-instagram"></i></li>
+                                                <li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.99913 6.87726C8.27882 6.87726 6.87491 8.28117 6.87491 10.0015C6.87491 11.7218 8.27882 13.1257 9.99913 13.1257C11.7194 13.1257 13.1234 11.7218 13.1234 10.0015C13.1234 8.28117 11.7194 6.87726 9.99913 6.87726ZM19.3694 10.0015C19.3694 8.70773 19.3812 7.4257 19.3085 6.13429C19.2358 4.63429 18.8937 3.30304 17.7968 2.20617C16.6976 1.10695 15.3687 0.767103 13.8687 0.694447C12.5749 0.621791 11.2929 0.63351 10.0015 0.63351C8.70773 0.63351 7.4257 0.621791 6.13429 0.694447C4.63429 0.767103 3.30304 1.10929 2.20617 2.20617C1.10695 3.30538 0.767103 4.63429 0.694447 6.13429C0.621791 7.42804 0.63351 8.71007 0.63351 10.0015C0.63351 11.2929 0.621791 12.5773 0.694447 13.8687C0.767103 15.3687 1.10929 16.6999 2.20617 17.7968C3.30538 18.896 4.63429 19.2359 6.13429 19.3085C7.42804 19.3812 8.71007 19.3694 10.0015 19.3694C11.2952 19.3694 12.5773 19.3812 13.8687 19.3085C15.3687 19.2359 16.6999 18.8937 17.7968 17.7968C18.896 16.6976 19.2358 15.3687 19.3085 13.8687C19.3835 12.5773 19.3694 11.2952 19.3694 10.0015ZM9.99913 14.8085C7.33898 14.8085 5.1921 12.6616 5.1921 10.0015C5.1921 7.34132 7.33898 5.19445 9.99913 5.19445C12.6593 5.19445 14.8062 7.34132 14.8062 10.0015C14.8062 12.6616 12.6593 14.8085 9.99913 14.8085ZM15.003 6.12023C14.3819 6.12023 13.8804 5.61867 13.8804 4.99757C13.8804 4.37648 14.3819 3.87492 15.003 3.87492C15.6241 3.87492 16.1257 4.37648 16.1257 4.99757C16.1259 5.14505 16.097 5.29112 16.0406 5.42741C15.9843 5.5637 15.9016 5.68754 15.7973 5.79182C15.693 5.89611 15.5692 5.9788 15.4329 6.03515C15.2966 6.0915 15.1505 6.12041 15.003 6.12023Z" fill="#9D9D9D" />
+                                                </svg>
+                                                </li>
                                                 <li><i className="fab fa-discord"></i></li>
                                                 <li><i className="fab fa-youtube"></i></li>
                                                 <li><i className="fab fa-medium-m"></i></li>
@@ -291,15 +293,15 @@ const Navbar = () => {
                                     </div>
                                 </li>
 
-                                <li className="nav-item d-sm-none d-lg-block">
-                                    <Link to="/CreateCollectible" className="nav-link">
+                                <li className="nav-item d-sm-none d-lg-block p-0 d-flex align-items-center">
+                                    <Link to="/CreateCollectible" className="nav-link p-0">
                                         <button className="btn btn-primary">Create</button>
                                     </Link>
                                 </li>
 
                                 {
-                                    location.pathname === "/" ? <li className="nav-item d-sm-none d-lg-block m-0">
-                                        <Link to="/SignIn" className="nav-link">
+                                    location.pathname === "/" ? <li className="nav-item d-sm-none d-lg-block m-0 p-0 d-flex align-items-center">
+                                        <Link to="/SignIn" className="nav-link p-0">
                                             <button className="btn btn-primary-outline">Sign In</button>
                                         </Link>
                                     </li> : ""
@@ -307,19 +309,16 @@ const Navbar = () => {
 
 
 
-                                <li className="nav-item">
+                                <li className="nav-item p-0">
 
                                     {
-                                        location.pathname !== "/" ? <a className="nav-link d-sm-none d-lg-block nav-dark-button mr-2 notification-popup-outline position-relative">
+                                        location.pathname !== "/" ? <a className="nav-link d-sm-none d-lg-block nav-dark-button mr-2 notification-popup-outline position-relative" >
                                             <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={() => { setNotificationPopup(!notificationPopup); document.body.style.overflow = "scroll"; }}>
                                                 <path d="M8.91211 9.16675H15.3288L7.07878 21.0834V12.8334H0.662109L8.91211 0.916748V9.16675Z" fill="black" />
                                             </svg>
                                             {
                                                 notificationPopup === false ? "" : <div className="notificationPopup p-0">
-                                                    <div className="popup-close-btn-exit" onClick={() => setNotificationPopup(false)}>
-                                                        <i className="fas fa-times"></i>
-                                                    </div>
-                                                    <div className="d-flex justify-content-between align-items-center p-4 mt-3">
+                                                    <div className="d-flex justify-content-between align-items-center p-4">
                                                         <h5>Notifications</h5>
                                                         <div className="color-ping text-left">See All</div>
                                                     </div>
@@ -340,9 +339,9 @@ const Navbar = () => {
                                                                         right into your inbox</span>
                                                                 </div>
 
-                                                                <div className="d-flex justify-content-between gray-color" style={{ borderRadius: "30px" }}>
-                                                                    <input width="100%" className="border-none gray-color" style={{ border: "none", paddingLeft: "10px", outline: "none", borderRadius: "30px" }} placeholder="Your email" />
-                                                                    <button className="btn btn-primary p-3">Get notified</button>
+                                                                <div className="d-flex justify-content-between gray-color mt-3" style={{ borderRadius: "30px" }}>
+                                                                    <input width="100%" className="border-none bg-white" style={{ border: "none", paddingLeft: "10px", outline: "none", borderTopLeftRadius: "30px", borderBottomLeftRadius: "30px" }} placeholder="Your email" />
+                                                                    <button className="single-create-collectible btn-ping pt-0 pb-0 pl-4 pr-4 " style={{ fontSize: "12px", marginLeft: "-15px" }}><small>Get notified</small></button>
                                                                 </div>
 
                                                             </div>
@@ -359,12 +358,11 @@ const Navbar = () => {
 
                                     {
                                         location.pathname !== "/" ? <a className="d-sm-none d-lg-block nav-link p-0 nav-dark-button mr-2 position-relative">
-                                            <img src={userProfilePictures} width="100%" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
-
+                                            <FaUser width="18" height="18" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
                                             {
                                                 openProfileDropMenu === false ? "" : <div className="notificationPopup">
-                                                    <h4>0×hubwc8fh2f....hb8fhr</h4>
-                                                    <div className="color-ping text-left">Set display name</div>
+                                                    <h4 className="text-left">0×hubwc8fh2f....hb8fhr</h4>
+                                                    <div className="color-ping text-left mt-2">Set display name</div>
 
                                                     <div className="border-section pt-3 mt-3">
 
@@ -433,8 +431,8 @@ const Navbar = () => {
                                                         <h6 className="m-0">Manage funds</h6>
 
                                                         <div className="custom-control custom-switch">
-                                                            <input type="checkbox" defaultChecked className="custom-control-input" id="customSwitch2" />
-                                                            <label className="custom-control-label" htmlFor="customSwitch2"></label>
+                                                            <input type="checkbox" className="custom-control-input" id="profileSwitch1" />
+                                                            <label className="custom-control-label" htmlFor="profileSwitch1"></label>
                                                         </div>
                                                     </div>
 
@@ -452,7 +450,7 @@ const Navbar = () => {
                                         </a> : ""
                                     }
 
-                                    <a className="nav-link nav-dark-button mr-2 d-sm-none d-lg-block" onClick={() => activeMode()}>
+                                    <a className="nav-link nav-dark-button d-sm-none d-lg-block" onClick={() => activeMode()}>
                                         {
                                             theme === true ? <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9.00056 4.49219C6.5146 4.49219 4.49219 6.51499 4.49219 9.00096C4.49219 11.4869 6.5146 13.5097 9.00056 13.5097C11.4861 13.5097 13.5089 11.4873 13.5089 9.00096C13.5089 6.5146 11.4861 4.49219 9.00056 4.49219Z" fill="white" />

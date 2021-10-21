@@ -243,6 +243,7 @@ footer .footer-title {
 
 footer .footer-title h3{
     color: var(--black-text) !important;
+    font-size: 22px !important;
 }
 
 footer .footer-title h6{
@@ -870,8 +871,12 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
     fill: var(--black-color);
 }
 
+.place-a-bid-popup-container .popup-width{
+    width: 488px;
+}
+
 .coin-covert-popup-container{
-    width: 470px;
+    width: 488px;
 }
 
 .popup-close-btn-exit{

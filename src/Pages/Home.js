@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
@@ -72,36 +72,37 @@ const Home = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 col-lg-6 pb-5 home-nft-slider-section">
-                            <div className="d-flex align-items-center">
-                                <h1 className="section-title mb-0 ml-0">
-                                    Starlight
-                                </h1>
+                            <div className="d-flex align-items-start flex-column">
+                                <div className="d-flex align-items-end">
+                                    <h1 className="section-title mb-0 ml-0" style={{fontSize: "72px"}}>
+                                        Starlight
+                                    </h1>
 
-                                <h3 className="mb-0 ml-3">(SLX)</h3>
+                                    <h3 className="mb-0 ml-3" style={{fontSize: "32px"}}>(SLX)</h3>
+                                </div>
+                                <h4 className="mt-2" style={{fontSize: "40px"}}>the NFT Governance Token</h4>
                             </div>
 
-                            <h4>the NFT Governance Token</h4>
-
-                            <p>
-                                A perfect place to buy and sell digital art, as well as updating your NFT collection.
-                            </p>
+                            <h6 style={{fontSize: "18px"}}>
+                                A perfect place to buy and sell digital art, as well as updating <br /> your NFT collection.
+                            </h6>
 
                             <button className="btn-primary">Explore all</button>
 
                             <div className="d-flex nft-start-counter">
-                                <div className="border-right pl-4 pr-4">
+                                <div className="border-right pr-4">
                                     <h4 className="m-0 p-0 text-center"><b>123k</b></h4>
                                     <small className="pl-2">User</small>
                                 </div>
 
                                 <div className="pl-4 pr-4">
-                                    <h4 className="m-0 p-0 text-center"><b>123k</b></h4>
-                                    <small className="pl-2">User</small>
+                                    <h4 className="m-0 p-0 text-center"><b>156k</b></h4>
+                                    <small className="pl-2">Artwork</small>
                                 </div>
 
                                 <div className="border-left pl-4 pr-4">
-                                    <h4 className="m-0 p-0 text-center"><b>123k</b></h4>
-                                    <small className="pl-2">User</small>
+                                    <h4 className="m-0 p-0 text-center"><b>200k</b></h4>
+                                    <small className="pl-2">Artist</small>
                                 </div>
                             </div>
                         </div>
@@ -1387,56 +1388,56 @@ const Home = () => {
                 variants={variants} className="liveAuction quickExplore">
                 <div className="container-fluid">
                     <div className="mb-3 row">
-                       <div className="col-sm-6 col-lg-4 order-1 order-sm-1 d-flex justify-content-between">
-                       <h3><b>Quick Explore</b></h3>
-                       <button className="m-0 p-0 btn-primary-outline-responsive d-lg-none" style={{ width: "36px", height: "36px", borderRadius: "50%" }}>
-                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
-                            </svg>
-                        </button>
-                       </div>
+                        <div className="col-sm-6 col-lg-4 order-1 order-sm-1 d-flex justify-content-between">
+                            <h3><b>Quick Explore</b></h3>
+                            <button className="m-0 p-0 btn-primary-outline-responsive d-lg-none" style={{ width: "36px", height: "36px", borderRadius: "50%" }}>
+                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
+                                </svg>
+                            </button>
+                        </div>
 
-                       <div className="col-sm-12 col-lg-8 order-sm-3 order-2 d-flex align-items-center">
-                        <ul className="nav nav-tabs" id="myTab" role="tablist">
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">
-                                    All</a>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">
-                                    Art</a>
-                            </li>
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="photo" aria-selected="false">
-                                    Photography</a>
-                            </li>
+                        <div className="col-sm-12 col-lg-8 order-sm-3 order-2 d-flex align-items-center">
+                            <ul className="nav nav-tabs" id="myTab" role="tablist">
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">
+                                        All</a>
+                                </li>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art" aria-selected="false">
+                                        Art</a>
+                                </li>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="photo" aria-selected="false">
+                                        Photography</a>
+                                </li>
 
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="games-tab" data-toggle="tab" href="#games" role="tab" aria-controls="games" aria-selected="false">
-                                    Games</a>
-                            </li>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="games-tab" data-toggle="tab" href="#games" role="tab" aria-controls="games" aria-selected="false">
+                                        Games</a>
+                                </li>
 
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="metaverses-tab" data-toggle="tab" href="#metaverses" role="tab" aria-controls="metaverses" aria-selected="false">
-                                    Metaverses</a>
-                            </li>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="metaverses-tab" data-toggle="tab" href="#metaverses" role="tab" aria-controls="metaverses" aria-selected="false">
+                                        Metaverses</a>
+                                </li>
 
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="music-tab" data-toggle="tab" href="#music" role="tab" aria-controls="music" aria-selected="false">
-                                    Music</a>
-                            </li>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="music-tab" data-toggle="tab" href="#music" role="tab" aria-controls="music" aria-selected="false">
+                                        Music</a>
+                                </li>
 
-                            <li className="nav-item" role="presentation">
-                                <a className="nav-link" id="memes-tab" data-toggle="tab" href="#memes" role="tab" aria-controls="memes" aria-selected="false">
-                                    Memes</a>
-                            </li>
-                        </ul>
-                        <button className="btn-primary-outline-big mt-0 d-mobile-none quick-explore-filter-buton">
-                            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
-                            </svg>
-                            Filter
-                        </button>
+                                <li className="nav-item" role="presentation">
+                                    <a className="nav-link" id="memes-tab" data-toggle="tab" href="#memes" role="tab" aria-controls="memes" aria-selected="false">
+                                        Memes</a>
+                                </li>
+                            </ul>
+                            <button className="btn-primary-outline-big mt-0 d-mobile-none quick-explore-filter-buton">
+                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M0 0V1.66667H15V0H0ZM5.83333 10H9.16667V8.33333H5.83333V10ZM12.5 5.83333H2.5V4.16667H12.5V5.83333Z" fill="black" />
+                                </svg>
+                                Filter
+                            </button>
                         </div>
                     </div>
 
