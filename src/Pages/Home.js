@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperCore, { Keyboard, Pagination, Navigation } from "swiper/core";
+import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay } from "swiper/core";
 import artWorkWeekOne from "../assets/img/custom/artWorkWeekOne.png";
 import artWorkWeek1 from "../assets/img/custom/artWorkWeek1.png";
 import artWorkWeek2 from "../assets/img/custom/artWorkWeek2.png";
@@ -36,7 +36,7 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 const { Option } = Select;
 
-SwiperCore.use([Keyboard, Pagination, Navigation]);
+SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 
 const Home = () => {
 
@@ -119,6 +119,10 @@ const Home = () => {
                                 spaceBetween={10}
                                 slidesPerView={1}
                                 navigation={true}
+                                autoplay={{
+                                    "delay": 2500,
+                                    "disableOnInteraction": false
+                                  }} 
                             >
                                 <SwiperSlide>
                                     <img src={artWorkWeek1} width="100%" />
@@ -132,9 +136,9 @@ const Home = () => {
                                                     <small className="ml-2">($3,321,45)</small>
                                                 </div>
                                             </div>
-                                            <div style={{ margin: "-10px 0" }}>
-                                                <small>Remaining time</small>
-                                                <h5 style={{ fontSize: "18px", marginTop: "10px" }}>23H : 11M: 32S</h5>
+                                            <div className="d-flex flex-column">
+                                                <small style={{marginTop: "-3px", marginBottom: "2px"}}>Remaining time</small>
+                                                <h5 style={{ fontSize: "18px"}}>23H : 11M: 32S</h5>
                                             </div>
                                         </div>
                                         <div className="ml-3 d-flex flex-column position-relative">
@@ -151,14 +155,14 @@ const Home = () => {
                                         <div className="slider-conter-absolute d-flex">
                                             <div className="d-flex flex-column">
                                                 <small>Current Bid</small>
-                                                <div className="d-flex">
-                                                    <h6>2.20 ETH</h6>
+                                                <div className="d-flex align-items-end">
+                                                    <h5><b>2.20 ETH</b></h5>
                                                     <small className="ml-2">($3,321,45)</small>
                                                 </div>
                                             </div>
-                                            <div className="ml-2">
-                                                <small>Remaining time</small>
-                                                <h6>23H : 11M: 32S</h6>
+                                            <div className="d-flex flex-column">
+                                                <small style={{marginTop: "-3px", marginBottom: "2px"}}>Remaining time</small>
+                                                <h5 style={{ fontSize: "18px"}}>23H : 11M: 32S</h5>
                                             </div>
                                         </div>
                                         <div className="ml-3 d-flex flex-column position-relative">
@@ -172,17 +176,17 @@ const Home = () => {
                                     <img src={artWorkWeek3} width="100%" />
                                     <div className="slider-content">
                                         <img src={topSellerUser1} width="52px" height="52px" />
-                                        <div className="slider-conter-absolute d-flex justify-content-between">
+                                        <div className="slider-conter-absolute d-flex">
                                             <div className="d-flex flex-column">
                                                 <small>Current Bid</small>
-                                                <div className="d-flex">
-                                                    <h6>2.20 ETH</h6>
+                                                <div className="d-flex align-items-end">
+                                                    <h5><b>2.20 ETH</b></h5>
                                                     <small className="ml-2">($3,321,45)</small>
                                                 </div>
                                             </div>
-                                            <div className="ml-2">
-                                                <small>Remaining time</small>
-                                                <h6>23H : 11M: 32S</h6>
+                                            <div className="d-flex flex-column">
+                                                <small style={{marginTop: "-3px", marginBottom: "2px"}}>Remaining time</small>
+                                                <h5 style={{ fontSize: "18px"}}>23H : 11M: 32S</h5>
                                             </div>
                                         </div>
                                         <div className="ml-3 d-flex flex-column position-relative">
@@ -199,14 +203,14 @@ const Home = () => {
                                         <div className="slider-conter-absolute d-flex">
                                             <div className="d-flex flex-column">
                                                 <small>Current Bid</small>
-                                                <div className="d-flex">
-                                                    <h6>2.20 ETH</h6>
+                                                <div className="d-flex align-items-end">
+                                                    <h5><b>2.20 ETH</b></h5>
                                                     <small className="ml-2">($3,321,45)</small>
                                                 </div>
                                             </div>
-                                            <div className="ml-2">
-                                                <small>Remaining time</small>
-                                                <h6>23H : 11M: 32S</h6>
+                                            <div className="d-flex flex-column">
+                                                <small style={{marginTop: "-3px", marginBottom: "2px"}}>Remaining time</small>
+                                                <h5 style={{ fontSize: "18px"}}>23H : 11M: 32S</h5>
                                             </div>
                                         </div>
                                         <div className="ml-3 d-flex flex-column position-relative">
@@ -237,50 +241,50 @@ const Home = () => {
                         <div className="col-sm-12 col-md-5 col-lg-5 position-relative">
                             <img src={artWorkWeekOne} width="95%" alt="" />
                             <div className="art-work-description-container">
-                                <h4 className="mb-0">The Black</h4>
+                                <h4 className="mb-0"><b>The Black</b></h4>
                                 <small>Original Series</small>
                             </div>
                         </div>
 
                         <div className="col-sm-12 col-md-7 col-lg-7 home-artwork-week-day position-relative d-flex flex-column align-items-stretch justify-content-between">
-                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
+                            <div className="d-flex artWork-of-the-week-overflow justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek2} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek3} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
+                            <div className="d-flex artWork-of-the-week-overflow justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek4} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek5} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek6} width="230" alt="" />
                                     <div className="art-work-description-container">
-                                        <small>Butterfly</small>
+                                        <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                             </div>

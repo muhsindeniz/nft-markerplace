@@ -305,6 +305,10 @@
     margin-top: 30px !important;
 }
 
+.nft-start .artWorkWeekSection .artWork-of-the-week-overflow{
+    overflow: auto !important;
+}
+
 h1{
     font-size: 18px !important;
 }
