@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay } from "swiper/core";
@@ -28,6 +28,7 @@ import topSellerUser7 from "../assets/img/custom/topSellerUser7.png";
 import topSellerUser8 from "../assets/img/custom/topSellerUser8.png";
 import topSellerUser9 from "../assets/img/custom/topSellerUser9.png";
 import topSellerUser10 from "../assets/img/custom/topSellerUser10.png";
+import FullScreenImage from '../Components/Popup/FullScreenImage';
 import { Menu, Dropdown, Select } from 'antd';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"
@@ -39,6 +40,8 @@ const { Option } = Select;
 SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 
 const Home = () => {
+
+    let [openImage, setOpenImage] = useState(false)
 
     const variants = {
         hidden: { opacity: 0 },
@@ -65,6 +68,9 @@ const Home = () => {
     return (
         <>
 
+            {
+                openImage && <FullScreenImage setOpenImage={setOpenImage} />
+            }
             <motion.section
                 initial="hidden"
                 animate="visible"
@@ -239,7 +245,7 @@ const Home = () => {
 
                     <div className="row mt-5">
                         <div className="col-sm-12 col-md-5 col-lg-5 position-relative">
-                            <img src={artWorkWeekOne} width="95%" alt="" />
+                            <img src={artWorkWeekOne} className="cursor-pointer" width="95%" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                             <div className="art-work-description-container">
                                 <h4 className="mb-0"><b>The Black</b></h4>
                                 <small>Original Series</small>
@@ -250,19 +256,19 @@ const Home = () => {
                             {/*artWork-of-the-week-overflow*/}
                             <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3">
-                                    <img src={artWorkWeek1} width="230" alt="" />
+                                    <img src={artWorkWeek1} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3">
-                                    <img src={artWorkWeek2} width="230" alt="" />
+                                    <img src={artWorkWeek2} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3">
-                                    <img src={artWorkWeek3} width="230" alt="" />
+                                    <img src={artWorkWeek3} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>
@@ -271,19 +277,19 @@ const Home = () => {
                             {/*artWork-of-the-week-overflow*/}
                             <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3 mt-3">
-                                    <img src={artWorkWeek4} width="230" alt="" />
+                                    <img src={artWorkWeek4} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3 mt-3">
-                                    <img src={artWorkWeek5} width="230" alt="" />
+                                    <img src={artWorkWeek5} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>
                                 </div>
                                 <div className="position-relative mr-3 mt-3">
-                                    <img src={artWorkWeek6} width="230" alt="" />
+                                    <img src={artWorkWeek6} className="cursor-pointer" width="230" alt="" onClick={() => {setOpenImage(true); document.body.style.overflow = "hidden";}} />
                                     <div className="art-work-description-container">
                                         <small><b>Butterfly</b></small>
                                     </div>

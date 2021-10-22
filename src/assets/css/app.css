@@ -1170,3 +1170,39 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 .sign-in-container-section .sig-in-mobile{
     margin-top: 100px;
 }
+
+.full-screen-images-popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    z-index: 99999;
+    top: 0;
+    padding: 60px 40px;
+}
+
+.full-screen-images-popup .full-screen-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.full-screen-images-popup .full-screen-image-resize{
+    width: 42px;
+    height: 42px;
+    border: solid 1px var(--gray-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 36px;
+    right: 70px;
+}
+
+.full-screen-images-popup .full-screen-image-resize svg path{
+    fill: var(--black-color);
+}
+
+.full-screen-images-popup .full-screen-image-resize:hover{
+    cursor: pointer;
+}
