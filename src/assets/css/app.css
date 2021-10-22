@@ -102,6 +102,8 @@
     fill: var(--black-color);
 }
 
+
+
 .create-single-section-container div,
 .create-single-section-container h1,
 .create-single-section-container h2,
@@ -149,6 +151,11 @@ border-bottom: solid 1px var(--gray-color);
 .profile-pictures-infos .btn-gray{
     background: var(--gray-bg);
     border: solid 1px #fff;
+}
+
+.profile-pictures-infos .ant-tabs-tab-active{
+    border-bottom: solid 2px #000 !important;
+    z-index: 9999 !important;
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
