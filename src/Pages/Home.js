@@ -78,15 +78,15 @@ const Home = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 col-lg-6 home-nft-slider-section margin-50">
-                            <div className="d-flex align-items-start flex-column">
-                                <div className="d-flex align-items-end">
+                            <div className="d-flex align-items-start flex-column w-100">
+                                <div className="d-flex align-items-end w-100 home-banner-description">
                                     <h1 className="section-title mb-0 ml-0" style={{ fontSize: "72px" }}>
                                         Starlight
                                     </h1>
 
                                     <h3 className="mb-0 ml-3" style={{ fontSize: "32px" }}>(SLX)</h3>
                                 </div>
-                                <h4 className="mt-2" style={{ fontSize: "40px" }}>the NFT Governance Token</h4>
+                                <h4 className="mt-2 w-100" style={{ fontSize: "40px" }}>the NFT Governance Token</h4>
                             </div>
 
                             <h6 style={{ fontSize: "18px" }}>
