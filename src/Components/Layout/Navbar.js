@@ -123,26 +123,26 @@ const Navbar = () => {
 
                         <div className="d-flex align-items-center">
 
-                            <div className="d-lg-none d-sm-block mr-2">
+                            <div className="d-lg-none d-sm-block mr-1">
                                 <a className="nav-link nav-dark-button">
                                     <img src={searchLine} alt="" />
                                 </a>
                             </div>
 
-                            <div className="d-lg-none d-sm-block mr-2">
+                            <div className="d-lg-none d-sm-block mr-1">
                                 <a className="nav-link nav-dark-button" onClick={() => activeMode()}>
                                     <img src={vectorLogo} alt="" />
                                 </a>
                             </div>
 
-                            <div className="navbar-toggler p-0 mr-2" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <div className="navbar-toggler p-0 mr-1" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
                                 <a className="nav-link nav-dark-button">
                                     <img src={menu4Line} className="navbar-hamburger-show" alt="" />
                                 </a>
                             </div>
 
                             <div className="d-lg-none d-sm-block">
-                                <a className="nav-link nav-dark-button">
+                                <a className="nav-link nav-dark-button p-0 nav-dark-button mr-2 position-relative">
                                     <svg onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                     </svg>
