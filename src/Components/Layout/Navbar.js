@@ -7,7 +7,6 @@ import fabaLogo from "../../assets/img/custom/x.svg";
 import { useLocation, Link } from "react-router-dom";
 import userTick from "../../assets/img/icons/custom/logo.svg";
 import grayPp from "../../assets/img/custom/grayPp.png";
-import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => {
 
@@ -122,30 +121,31 @@ const Navbar = () => {
                 <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar">
                     <div className="container-fluid menu-reverse container-fluid menu-reverse">
 
-                        <div className="d-flex">
+                        <div className="d-flex align-items-center">
 
-                            <div className="d-lg-none d-sm-block mr-3">
+                            <div className="d-lg-none d-sm-block mr-2">
                                 <a className="nav-link nav-dark-button">
                                     <img src={searchLine} alt="" />
                                 </a>
                             </div>
 
-                            <div className="d-lg-none d-sm-block mr-3">
+                            <div className="d-lg-none d-sm-block mr-2">
                                 <a className="nav-link nav-dark-button" onClick={() => activeMode()}>
                                     <img src={vectorLogo} alt="" />
                                 </a>
                             </div>
 
-                            <div className="navbar-toggler nav-dark-button mr-3" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <a className="nav-link nav-dark-button mr-2">
+                            <div className="navbar-toggler p-0 mr-2" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <a className="nav-link nav-dark-button">
                                     <img src={menu4Line} className="navbar-hamburger-show" alt="" />
                                 </a>
                             </div>
 
-                            <div className="d-lg-none d-sm-block ">
-                                <a className="nav-link p-0">
-                                    <FaUser width="18" height="18" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
-
+                            <div className="d-lg-none d-sm-block">
+                                <a className="nav-link nav-dark-button">
+                                    <svg onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
                                     {
                                         openProfileDropMenu === false ? "" : <div className="openProfileDropMenu">
                                             <h4>0×hubwc8fh2f....hb8fhr</h4>
@@ -196,10 +196,9 @@ const Navbar = () => {
                                                     </div>
 
                                                     <a className="nav-link nav-dark-button">
-                                                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <svg width="20" height="20" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path fillRule="evenodd" clipRule="evenodd" d="M6.02452 4.24267L6.96719 3.3L3.66719 0L0.367188 3.3L1.31052 4.24267L3.00052 2.552V11.3333H4.33385V2.552L6.02452 4.24267ZM10.3352 12.0001L13.6352 8.70008L12.6925 7.75741L11.0018 9.44808V0.666748H9.66849L9.66916 9.44808L7.97782 7.75741L7.03516 8.70008L10.3352 12.0001Z" fill="black" />
                                                         </svg>
-
                                                     </a>
                                                 </div>
 
@@ -312,7 +311,7 @@ const Navbar = () => {
                                 <li className="nav-item p-0">
 
                                     {
-                                        location.pathname !== "/" ? <a className="nav-link d-sm-none d-lg-block nav-dark-button mr-2 notification-popup-outline position-relative" >
+                                        location.pathname !== "/" ? <a className="nav-link d-sm-none d-lg-block nav-dark-button notification-popup-outline position-relative mr-2" >
                                             <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={() => { setNotificationPopup(!notificationPopup); document.body.style.overflow = "scroll"; }}>
                                                 <path d="M8.91211 9.16675H15.3288L7.07878 21.0834V12.8334H0.662109L8.91211 0.916748V9.16675Z" fill="black" />
                                             </svg>
@@ -358,7 +357,9 @@ const Navbar = () => {
 
                                     {
                                         location.pathname !== "/" ? <a className="d-sm-none d-lg-block nav-link p-0 nav-dark-button mr-2 position-relative">
-                                            <FaUser width="18" height="18" alt="" onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} />
+                                            <svg onClick={() => setOpenProfileDropMenu(!openProfileDropMenu)} xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            </svg>
                                             {
                                                 openProfileDropMenu === false ? "" : <div className="notificationPopup">
                                                     <h4 className="text-left">0×hubwc8fh2f....hb8fhr</h4>

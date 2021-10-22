@@ -17,6 +17,7 @@
     .nft-start-counter {
         justify-content: center !important;
         margin-top: 20px !important;
+        align-items: center !important;
     }
 
     .order-sm-1{
@@ -66,6 +67,7 @@
 
     .nft-start .home-nft-slider-section{
         align-items: center !important;
+        margin-top: 0 !important;
     }
 
     .d-mobile-none {
@@ -317,20 +319,33 @@ header .navbar{
     margin-top: 25px !important;
 }
 
+.nft-start .home-center{
+    margin: auto auto;
+}
+
 h1{
-    font-size: 18px !important;
+    font-size: 32px !important;
 }
 
 h2{
-    font-size: 14px !important;
+    font-size: 28px !important;
 }
 
 h3{
-    font-size: 12px !important;
+    font-size: 26px !important;
 }
 
 h4{
-    font-size: 10px !important;
+    font-size: 24px !important;
+}
+
+h5{
+    font-size: 14px !important;
+}
+
+
+h6{
+    font-size: 12px !important;
 }
 
 

@@ -74,10 +74,10 @@ const Home = () => {
             <motion.section
                 initial="hidden"
                 animate="visible"
-                variants={variants} className="nft-start margin-50">
+                variants={variants} className="nft-start">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-sm-12 col-lg-6 home-nft-slider-section">
+                        <div className="col-sm-12 col-lg-6 home-nft-slider-section margin-50">
                             <div className="d-flex align-items-start flex-column">
                                 <div className="d-flex align-items-end">
                                     <h1 className="section-title mb-0 ml-0" style={{ fontSize: "72px" }}>
@@ -117,7 +117,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-lg-5">
+                        <div className="col-sm-12 col-lg-5 margin-50 ">
                             <div className="bg-lines"></div>
 
                             <Swiper

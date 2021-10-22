@@ -1206,3 +1206,7 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 .full-screen-images-popup .full-screen-image-resize:hover{
     cursor: pointer;
 }
+
+.create-single-section-container .putOnMarketplace svg path{
+    fill: var(--black-color) !important;
+}
