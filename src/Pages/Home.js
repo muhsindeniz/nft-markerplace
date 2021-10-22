@@ -247,7 +247,8 @@ const Home = () => {
                         </div>
 
                         <div className="col-sm-12 col-md-7 col-lg-7 home-artwork-week-day position-relative d-flex flex-column align-items-stretch justify-content-between">
-                            <div className="d-flex artWork-of-the-week-overflow justify-content-between w-100 justify-content-between">
+                            {/*artWork-of-the-week-overflow*/}
+                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
                                     <div className="art-work-description-container">
@@ -267,8 +268,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            <div className="d-flex artWork-of-the-week-overflow justify-content-between w-100 justify-content-between">
+                            {/*artWork-of-the-week-overflow*/}
+                            <div className="d-flex overflow-auto justify-content-between w-100 justify-content-between">
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek4} width="230" alt="" />
                                     <div className="art-work-description-container">
@@ -1245,7 +1246,7 @@ const Home = () => {
                     <div className="topSellerContent mt-5">
                         <div className="d-flex overflow-auto justify-content-between w-100 mb-4">
                             <div className="topSellerCard mr-3">
-                            <div className="w-100 topSellerCardImageover">
+                                <div className="w-100 topSellerCardImageover">
                                     <img className="seller-banner-image" src={topSeller4} width="240" alt="" />
                                 </div>
                                 <div className="topSellectProfilePicture">
@@ -1261,7 +1262,7 @@ const Home = () => {
                             </div>
 
                             <div className="topSellerCard mr-3">
-                            <div className="w-100 topSellerCardImageover">
+                                <div className="w-100 topSellerCardImageover">
                                     <img className="seller-banner-image" src={topSeller2} width="240" alt="" />
                                 </div>
                                 <div className="topSellectProfilePicture">
@@ -1277,7 +1278,7 @@ const Home = () => {
                             </div>
 
                             <div className="topSellerCard mr-3">
-                            <div className="w-100 topSellerCardImageover">
+                                <div className="w-100 topSellerCardImageover">
                                     <img className="seller-banner-image" src={topSeller3} width="240" alt="" />
                                 </div>
                                 <div className="topSellectProfilePicture">
@@ -1293,7 +1294,7 @@ const Home = () => {
                             </div>
 
                             <div className="topSellerCard mr-3">
-                            <div className="w-100 topSellerCardImageover">
+                                <div className="w-100 topSellerCardImageover">
                                     <img className="seller-banner-image" src={topSeller4} width="240" alt="" />
                                 </div>
                                 <div className="topSellectProfilePicture">
@@ -1309,7 +1310,7 @@ const Home = () => {
                             </div>
 
                             <div className="topSellerCard mr-3">
-                            <div className="w-100 topSellerCardImageover">
+                                <div className="w-100 topSellerCardImageover">
                                     <img className="seller-banner-image" src={topSeller5} width="240" alt="" />
                                 </div>
                                 <div className="topSellectProfilePicture">
@@ -1457,7 +1458,7 @@ const Home = () => {
                             </button>
                         </div>
 
-                        <div className="col-sm-12 col-lg-8 order-sm-3 order-2 d-flex align-items-center liveAuction-mobile-margin">
+                        <div className="col-sm-12 col-lg-8 order-sm-3 order-2 d-flex align-items-center">
                             <ul className="nav nav-tabs" id="myTab" role="tablist">
                                 <li className="nav-item" role="presentation">
                                     <a className="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">

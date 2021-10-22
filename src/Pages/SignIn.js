@@ -45,8 +45,8 @@ const SignIn = () => {
                             </div>
 
                             <div className="mt-5">
-                                <h2>Sign in with your wallet</h2>
-                                <p className="mb-4">Sign in with one of available wallet providers or create a new wallet <br />
+                                <h3>Sign in with your wallet</h3>
+                                <p className="mb-4 mt-3">Sign in with one of available wallet providers or create a new wallet <br />
                                     <span className="color-ping"> <b>What is a wallet?</b></span></p>
 
                                 <button className="btn btn-ping signInActiveBtn w-100 d-flex align-items-center justify-content-center mb-4">

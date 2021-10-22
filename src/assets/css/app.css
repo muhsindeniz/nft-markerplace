@@ -45,6 +45,14 @@
     color: var(--text-light-color);
 }
 
+.btn-ping:hover{
+    color: white !important;
+}
+
+.btn:focus{
+    box-shadow: none !important;
+}
+
 .buy-art-work-week h1, 
 .buy-art-work-week h2, 
 .buy-art-work-week h3, 
@@ -57,6 +65,8 @@
 .liveAuction h3,
 .quickExplore h3,
 .buy-art-work-week small, 
+.sign-in-container-section h3,
+.sign-in-container-section h6,
 .buy-art-work-week a,
 .buy-art-work-week .tab-pane,
 .openProfileDropMenu h6,
@@ -950,6 +960,11 @@ footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
 
 .sign-in-container-section h5,
 .sign-in-container-section svg path,
+.create-collectible svg path,
+.create-collectible h6,
+.create-single-section-container svg path,
+.create-single-section-container h6,
+.notificationPopup h6,
 .sign-in-container-section h2,
 .sign-in-container-section p{
     color: var(--black-text) !important;
