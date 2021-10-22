@@ -237,7 +237,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link to="/" className="navbar-brand m-0"> <img src={fabaLogo} width="24" alt="" /> <span style={{ fontSize: "22px", fontFamily: 'LoRes 9 Plus OT Narrow' }}>Starlight</span></Link>
+                        <Link to="/" className="navbar-brand m-0 d-flex align-items-center"> <img src={fabaLogo} width="24" alt="" /> <h3 className="ml-2" style={{ fontSize: "22px", fontFamily: 'LoRes 9 Plus OT Narrow' }}>Starlight</h3></Link>
 
                         <div className="collapse navbar-collapse" id="mainNav">
 
