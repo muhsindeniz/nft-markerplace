@@ -305,6 +305,10 @@
     margin-top: 30px !important;
 }
 
+header .navbar{
+    padding: 10px 30px !important;
+}
+
 .artWork-of-the-week-overflow{
     overflow: auto !important;
 }

@@ -120,7 +120,7 @@ const Navbar = () => {
                                             location.pathname === "/FullScreenImage" ? "relative" : "absolute"
                 }}> */}
                 <nav className="navbar navbar-light navbar-expand-lg" id="myNavbar">
-                    <div className="container-fluid menu-reverse container-fluid menu-reverse pl-5 pr-5">
+                    <div className="container-fluid menu-reverse container-fluid menu-reverse">
 
                         <div className="d-flex">
 
@@ -238,7 +238,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link to="/" className="navbar-brand m-0"> <img src={fabaLogo} width="24" alt="" /> <span style={{ fontSize: "22px", marginLeft: "10px", fontFamily: 'LoRes 9 Plus OT Narrow' }}>Starlight</span></Link>
+                        <Link to="/" className="navbar-brand m-0"> <img src={fabaLogo} width="24" alt="" /> <span style={{ fontSize: "22px", fontFamily: 'LoRes 9 Plus OT Narrow' }}>Starlight</span></Link>
 
                         <div className="collapse navbar-collapse" id="mainNav">
 

@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    padding: 20px 0 0 0 !important;
+    padding: 20px;
     top: 0;
     left: 0;
     z-index: 99;
@@ -98,11 +98,6 @@ section{
 /* breakpoint and up - mega dropdown styles */
 
 @media screen and (min-width: 767px) {
-    /* remove the padding from the navbar so the dropdown hover state is not broken */
-    .navbar {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
     /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
     .navbar .nav-item {
         padding: .5rem .5rem;

@@ -39,11 +39,13 @@ const CreateCollectibleSingle = () => {
                 variants={variants} className="create-single-section-container">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-12 d-flex align-items-center">
-                            <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M14 7.33341H4.55333L8.28 3.60675L7.33333 2.66675L2 8.00008L7.33333 13.3334L8.27333 12.3934L4.55333 8.66675H14V7.33341Z" fill="#141414" />
-                            </svg>
-                            <Link to="/CreateCollectible"><h5 className="ml-3 mb-0">Back</h5></Link>
+                        <div className="col-sm-12">
+                            <Link className="d-flex align-items-center" to="/CreateCollectible">
+                                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M14 7.33341H4.55333L8.28 3.60675L7.33333 2.66675L2 8.00008L7.33333 13.3334L8.27333 12.3934L4.55333 8.66675H14V7.33341Z" fill="#141414" />
+                                </svg>
+                                <h6 className="ml-3 mb-0">Back</h6>
+                            </Link>
                         </div>
 
                         <div className="col-sm-12 mt-5">
@@ -137,7 +139,7 @@ const CreateCollectibleSingle = () => {
                             </div>
 
                             <div className="d-flex">
-                                <div style={{width: "230px"}} className="putOnMarketplace border-gray border-radius btn-primary-outline-responsive" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
+                                <div style={{ width: "230px" }} className="putOnMarketplace border-gray border-radius btn-primary-outline-responsive" onClick={() => { setSingleCollectionPopup(true); document.body.style.overflow = "hidden"; }}>
                                     <img src={plus} width="40" alt="" />
                                     <b> Create</b>
                                     <div><small className="color-gray">ERC-721</small></div>
@@ -217,16 +219,16 @@ const CreateCollectibleSingle = () => {
                                     <h5><b>Properties</b> </h5><span><small className="color-gray ml-2">(Optional)</small></span>
                                 </div>
 
-                               <div className="d-flex">
-                               <div className="prize-single-collectible d-flex w-100">
-                                    <input type="text" placeholder="e. g.  Size" />
-                                </div>
+                                <div className="d-flex">
+                                    <div className="prize-single-collectible d-flex w-100">
+                                        <input type="text" placeholder="e. g.  Size" />
+                                    </div>
 
-                                <div className="prize-single-collectible d-flex w-100 ml-3">
-                                <input type="text" placeholder="e. g.  Medium" />
-                                </div>
+                                    <div className="prize-single-collectible d-flex w-100 ml-3">
+                                        <input type="text" placeholder="e. g.  Medium" />
+                                    </div>
 
-                               </div>
+                                </div>
                             </div>
 
 
@@ -248,7 +250,7 @@ const CreateCollectibleSingle = () => {
                         </div>
 
                         <div className="col-sm-12 col-lg-5">
-                        <div className="mt-5 border-gray border-radius p-4">
+                            <div className="mt-5 border-gray border-radius p-4">
                                 <div className="d-flex">
                                     <h5><b>Royalties</b> </h5>
                                 </div>

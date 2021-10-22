@@ -33,14 +33,15 @@ const SignIn = () => {
                         <img src={signInBanner} width="100%" />
                     </div>
 
-                    <div className="col-sm-12 col-lg-8 d-flex justify-content-center">
+                    <div className="col-sm-12 col-lg-8 d-flex justify-content-center sig-in-mobile">
                         <div>
-                            <div className="mt-5 d-flex align-items-center">
-                                <svg width="18" height="18" viewBox="0 0 12 12" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M12 5.33464H2.55333L6.28 1.60797L5.33333 0.667969L0 6.0013L5.33333 11.3346L6.27333 10.3946L2.55333 6.66797H12V5.33464Z" fill="#141414" />
-                                </svg>
-
-                                <Link to="/CreateCollectible"><h5 className="ml-3 mb-0">Back</h5></Link>
+                            <div className="mt-5">
+                                <Link className="d-flex align-items-center" to="/CreateCollectible">
+                                    <svg width="18" height="18" viewBox="0 0 12 12" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M12 5.33464H2.55333L6.28 1.60797L5.33333 0.667969L0 6.0013L5.33333 11.3346L6.27333 10.3946L2.55333 6.66797H12V5.33464Z" fill="#141414" />
+                                    </svg>
+                                    <h6 className="ml-3 mb-0">Back</h6>
+                                </Link>
                             </div>
 
                             <div className="mt-5">
