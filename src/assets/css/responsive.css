@@ -305,8 +305,12 @@
     margin-top: 30px !important;
 }
 
-.nft-start .artWorkWeekSection .artWork-of-the-week-overflow{
+.artWork-of-the-week-overflow{
     overflow: auto !important;
+}
+
+.liveAuction-mobile-margin{
+    margin-top: 25px !important;
 }
 
 h1{

@@ -58,15 +58,15 @@ const Buy = () => {
                 initial="hidden"
                 animate="visible"
                 variants={variants} className="buy-art-work-week">
-                <div className="container-fluid">
+                <div className="container-fluid mt-5">
                     <div className="row">
-                        <div className="col-sm-12 col-lg-5">
+                        <div className="col-sm-12 col-lg-6">
                             <img src={artWorkWeekOne} className="border-radius" width="100%" alt="" />
                         </div>
-                        <div className="col-sm-12 col-lg-7 ">
+                        <div className="col-sm-12 col-lg-6">
                             <div className="buy-art-work-week-card border-radius">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <h1>Artwork of the week</h1>
+                                    <h3><b>Artwork of the week</b></h3>
                                     <div className="d-flex">
                                         <div className="card-heart-icon"><i className="fas fa-heart"></i> 24</div>
                                         <Dropdown overlay={menu}>
@@ -78,15 +78,17 @@ const Buy = () => {
                                 </div>
 
                                 <div className="mt-4">
-                                    <span className="text-secondary">Highest bid </span>
-                                    <span className="color-ping">0.066 wETH</span>
+                                    <b>
+                                        <span className="text-secondary">Highest bid </span>
+                                        <span className="color-ping">0.066 wETH</span>
+                                    </b>
                                 </div>
 
-                                <p className="mt-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <p className="mt-5" style={{fontSize: "18px", fontFamily: "AvertaStd-Regular"}}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua.
                                 </p>
 
-                                <div className="w-100 d-flex">
+                                <div className="w-100 d-flex mt-5">
                                     <div className="d-flex flex-column">
                                         <b className="text-secondary">Creator</b>
                                         <div className="mt-3">

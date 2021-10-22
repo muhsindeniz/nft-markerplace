@@ -41,9 +41,9 @@ const Profile = () => {
 
     return (
         <motion.section
-        initial="hidden"
-        animate="visible"
-        variants={variants} className="profile-pictures-infos mt-5">
+            initial="hidden"
+            animate="visible"
+            variants={variants} className="profile-pictures-infos mt-5">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-sm-12">
@@ -51,19 +51,19 @@ const Profile = () => {
                             <div className="position-relative">
                                 <div className="border p-3 gray-color profile-pictures-cover">
                                     {/* <img src={profileBanner} width="100%" alt="" /> */}
-                                    <button className="bg-white border edit-profile">Add Cover</button>
+                                    <button className="bg-white border-gray edit-profile">Add Cover</button>
                                 </div>
                                 <div className="profile-info-position">
                                     <div className="profile-user-pictures">
                                         <img src={userProfilePictures} width="100%" alt="" />
                                     </div>
                                     <div className="mt-3 profile-usr-name-h3-size">
-                                        <h3>Arlene McCoy</h3>
-                                        <div className="btn-gray text-center">0xbAu7...f08a</div>
+                                        <h3><b>Arlene McCoy</b></h3>
+                                        <div className="btn-gray text-center mt-3"><b>0xbAu7...f08a</b></div>
                                     </div>
 
-                                    <div className="w-100 mt-3 d-flex justify-content-between align-items-center">
-                                        <button className="bg-white border-gray edit-profile">Edit Profile</button>
+                                    <div className="mt-3 d-flex justify-content-between align-items-center">
+                                        <button className="bg-white border-gray edit-profile"><b>Edit Profile</b></button>
                                         <button className="bg-white border-gray profile-upload">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path clipRule="evenodd" clipRule="evenodd" d="M3.75 6.75H7.5V11.25H10.5V6.75H14.25L9 1.5L3.75 6.75ZM15 9V14.25H3V9H1.5V15C1.5 15.4142 1.83579 15.75 2.25 15.75H15.75C16.1642 15.75 16.5 15.4142 16.5 15V9H15Z" fill="black" />
@@ -250,7 +250,9 @@ const Profile = () => {
                                                 <div className="row">
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser1} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -267,7 +269,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser3} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -284,7 +288,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser4} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -402,7 +408,9 @@ const Profile = () => {
                                                 <div className="row">
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser1} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -410,7 +418,7 @@ const Profile = () => {
                                                                 </div>
                                                             </div>
                                                             <div className="topSellerUserInfo">
-                                                               <h6><b>Courtney Henry</b></h6>
+                                                                <h6><b>Courtney Henry</b></h6>
                                                                 <h5 className="color-ping mt-2 mb-2">Started following you</h5>
                                                             </div>
                                                             <button className="btn-ping  w-100 mb-3">Unfollow</button>
@@ -419,7 +427,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser3} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -436,7 +446,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser4} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -548,7 +560,9 @@ const Profile = () => {
                                                 <div className="row">
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser1} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -565,7 +579,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller3} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser3} width="100%" alt="" />
                                                                 <div className="confirmation">
@@ -582,7 +598,9 @@ const Profile = () => {
 
                                                     <div className="col-sm-12 col-lg-3 mb-4">
                                                         <div className="topSellerCard">
-                                                            <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            <div className="w-100 topSellerCardImageover">
+                                                                <img className="seller-banner-image" src={topSeller4} width="100%" alt="" />
+                                                            </div>
                                                             <div className="topSellectProfilePicture">
                                                                 <img src={topSellerUser4} width="100%" alt="" />
                                                                 <div className="confirmation">

@@ -7,6 +7,8 @@
 
 .buy-art-work-week-card {
     background-color: var(--bg-main-white);
+    border: solid .5px var(--light-gray);
+    padding: 30px;
 }
 
 .buy-art-work-week .card-heart-icon {
@@ -206,8 +208,8 @@
 
 .profile-pictures-infos .profile-upload,
 .profile-pictures-infos .select {
-    width: 80px;
-    height: 35px;
+    width: 48px !important;
+    height: 48px !important;
     border-radius: 50%;
     display: flex;
     justify-content: center;
