@@ -1,17 +1,25 @@
 import React from 'react'
 import { Select } from 'antd';
+import { motion } from "framer-motion"
 
 const { Option } = Select;
 
 const CoinConverPopup = () => {
 
-    return (
-        <div className="place-a-bid-popup-container">
-            <div className="border-radius bg-white p-4 popup-width coin-covert-popup-container">
-                <div className="d-flex justify-content-between cursor-pointer">
-                    <h3><b>Convert</b></h3>
-                </div>
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
+    return (
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={variants} className="place-a-bid-popup-container">
+            <div className="border-radius bg-white popup-width coin-covert-popup-container" style={{padding: "48px"}}>
+                <div className="d-flex justify-content-between cursor-pointer">
+                    <h3>Convert</h3>
+                </div>
 
                 <div className="mt-2">
                     <div className="d-flex">
@@ -47,9 +55,6 @@ const CoinConverPopup = () => {
                     </div>
                 </div>
 
-
-
-
                 <div className="border-bottom pt-3 pb-3">
                     <button className="btn-primary-outline w-100 mt-3">
                         Convert
@@ -61,9 +66,8 @@ const CoinConverPopup = () => {
                         Close
                     </button>
                 </div>
-
             </div>
-        </div>
+        </motion.div>
     )
 }
 

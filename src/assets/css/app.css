@@ -20,7 +20,7 @@
 }
 
 .buy-art-work-week-card {
-    padding: 30px;
+    padding: 0 30px 30px 30px;
 }
 
 .btn-light {
@@ -45,11 +45,13 @@
     color: var(--text-light-color);
 }
 
-section h3 b, .topSellerUserInfo h5{
-    color: var(--black-color) !important;
+.btn-ping:hover{
+    color: white !important;
 }
 
-
+.btn:focus{
+    box-shadow: none !important;
+}
 
 .buy-art-work-week h1, 
 .buy-art-work-week h2, 
@@ -57,10 +59,15 @@ section h3 b, .topSellerUserInfo h5{
 .buy-art-work-week h4, 
 .buy-art-work-week h5, 
 .buy-art-work-week h6, 
+nav h3, 
 .buy-art-work-week p,
 .buy-art-work-week span,
 .buy-art-work-week b,
+.liveAuction h3,
+.quickExplore h3,
 .buy-art-work-week small, 
+.sign-in-container-section h3,
+.sign-in-container-section h6,
 .buy-art-work-week a,
 .buy-art-work-week .tab-pane,
 .openProfileDropMenu h6,
@@ -68,11 +75,14 @@ section h3 b, .topSellerUserInfo h5{
 .notificationPopup h4,
 .cryptoioria-banner-container h4,
 .cryptoioria-banner-container div,
+.artWorkWeekSection h3,
+.create-collectible div,
+.create-collectible h1,
+.create-collectible h5,
+.create-collectible p,
+.create-collectible b,
+.quickExplore h4,
 .openProfileDropMenu h4{
-    color: var(--black-color);
-}
-
-.quickExplore h4{
     color: var(--black-color);
 }
 
@@ -92,6 +102,8 @@ section h3 b, .topSellerUserInfo h5{
 .profile-activity-filter-mobile path{
     fill: var(--black-color);
 }
+
+
 
 .create-single-section-container div,
 .create-single-section-container h1,
@@ -125,22 +137,26 @@ section h3 b, .topSellerUserInfo h5{
     fill: var(--black-color);
 }
 
-.create-collectible div,
-.create-collectible h1,
-.create-collectible h5,
-.create-collectible p,
-.create-collectible b{
-    color: var(--black-color);
-}
-
 .profile-pictures-infos .profile-activity-filter-mobile path{
     fill: var(--pink-color);
 }
 
+.profile-pictures-infos .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap{
+border-bottom: solid 1px var(--gray-color);
+}
+
+.ant-tabs-tab + .ant-tabs-tab div{
+    color: var(--gray-color);
+}
 
 .profile-pictures-infos .btn-gray{
-    background: var(--gray-color);
+    background: var(--gray-bg);
     border: solid 1px #fff;
+}
+
+.profile-pictures-infos .ant-tabs-tab-active{
+    border-bottom: solid 2px #000 !important;
+    z-index: 9999 !important;
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
@@ -153,7 +169,7 @@ section h3 b, .topSellerUserInfo h5{
 }
 
 
-.nft-start h3{
+.nft-start h3, .nft-start h6{
     color: var(--black-color);
 }
 
@@ -240,8 +256,13 @@ footer .footer-title {
     margin-bottom: 25px;
 }
 
+footer .footer-title h3{
+    color: var(--black-text) !important;
+    font-size: 22px !important;
+}
+
 footer .footer-title h6{
-    color: var(--black-text);
+    color: var(--black-text) !important;
 }
 
 footer .footer-menu li {
@@ -292,22 +313,6 @@ footer .footer-social-media-container li:hover {
     font-weight: 400;
 }
 
-section {
-    padding: 50px 70px;
-}
-
-.color-red {
-    color: var(--red-color);
-}
-
-.color-orange {
-    color: var(--light-red);
-}
-
-.color-ping {
-    color: var(--pink-color);
-}
-
 footer div{
     color: var(--black-text);
 }
@@ -319,7 +324,9 @@ footer section .footer-in-email {
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.01);
     border-radius: 24px;
     padding: 0 20px;
+    height: 50px;
     font-size: 14px;
+    background-color: var(--footer-input-bg);
 }
 
 .artWorkWeekSection img {
@@ -333,20 +340,46 @@ footer section .footer-in-email {
 
 .art-work-description-container {
     background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
-    border-radius: 13px;
+    border-radius: 15px;
     position: absolute;
     width: 80%;
-    padding: 5px 10px;
+    padding: 10px 17px;
+    display: flex;
     left: 50%;
     bottom: 5%;
+    flex-direction: column;
+    align-items: flex-start;
     transform: translate(-50%, 0);
+    justify-content: center;
+}
+
+.nft-start .artWorkWeekSection .artWork-of-the-week-overflow{
+    overflow: hidden;
+}
+
+.art-work-description-container small{
+    font-family: "AvertaStd-Regular" !important;
+    font-size: 15px;
+}
+
+.art-work-description-container small b{
+    font-family: "AvertaStd-Regular" !important;
+    font-size: 14px;
 }
 
 .footer-social-icons i {
     font-size: 22px;
     color: #9D9D9D;
     padding: 0 10px;
+    cursor: pointer;
+}
+
+.footer-social-icons svg{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
     cursor: pointer;
 }
 
@@ -367,6 +400,8 @@ footer section .footer-in-email {
     justify-content: flex-start;
     align-items: center;
 }
+
+
 
 .topSellerCard {
     background-color: var(--bg-white);
@@ -397,6 +432,9 @@ footer section .footer-in-email {
 
 .topSeller .topSellerCard .topSellerUserInfo small {
     color: var(--gray-color);
+    font-size: 14px;
+    font-family: "AvertaStd-Semibold" !important;
+    margin-top: 10px;
 }
 
 .topSellerContent .topSellerCard .topSellectProfilePicture .confirmation {
@@ -415,6 +453,8 @@ footer section .footer-in-email {
 
 .liveAuction .liveAuction-card-container .live-image img {
     border-radius: 15px;
+    max-height: 206px;
+    object-fit: cover;
 }
 
 .liveAuction .live-image {
@@ -442,7 +482,7 @@ footer section .footer-in-email {
     cursor: pointer;
     padding: 5px 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: -16px;
     right: 15px;
     border: 0.2px solid #EDECEC;
     box-sizing: border-box;
@@ -455,7 +495,7 @@ footer section .footer-in-email {
 }
 
 .liveAuction .live-user-list img {
-    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .liveAuction .live-user-list .live-card-tick {
@@ -496,6 +536,11 @@ footer section .footer-in-email {
 
 .ant-tabs-top > .ant-tabs-nav::before{
     border: none !important;
+}
+
+.quickExplore .ant-tabs-tab-active{
+    background-color: var(--black-color) !important;
+    color: var(--bg-white) !important;
 }
 
 .quickExplore .ant-tabs-tab{
@@ -567,9 +612,10 @@ footer section .footer-in-email {
 
 .slider-conter-absolute{
     position: absolute;
-    top: -55px;
+    top: -75px;
     border-radius: 15px;
-    width: 80%;
+    height: 100px;
+    width: 83%;
     left: 50%;
     transform: translate(-50%);
     padding: 15px;
@@ -577,7 +623,12 @@ footer section .footer-in-email {
     backdrop-filter: blur(50px);
     text-align: left;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.margin-50{
+    margin-top: 100px !important;
 }
 
 .nft-start .slider-content .slider-conter-absolute h6{
@@ -601,6 +652,14 @@ font-size: 12px;
     color: var(--black-color) !important;
 }
 
+.quick-explore-filter-buton svg path{ 
+    fill: var(--black-color) !important;
+}
+
+.quick-explore-filter-buton svg{ 
+    margin-right: 10px !important;
+}
+
 .ant-dropdown-menu-item:hover{
     background-color: var(--pink-color) !important;
     color: var(--white-color) !important; 
@@ -616,9 +675,9 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
-    top: 0;
+    top: 4px;
     right: 0;
 }
 
@@ -627,7 +686,7 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
     top: -9px;
     right: -15px;
@@ -638,7 +697,7 @@ font-size: 12px;
     position: absolute;
     width: 95%;
     height: 95%;
-    border: solid 1px var(--red-color);
+    border: solid 1px var(--pink-color);
     border-radius: 15px;
     top: -20px;
     right: -30px;
@@ -647,7 +706,7 @@ font-size: 12px;
 
 .liveAuction-card-container h6{
     color: var(--black-text) !important;
-    margin-top: 15px;
+    margin-top: 15px !important;
 }
 
 .topSeller .ant-select:not(.ant-select-customize-input) .ant-select-selector{
@@ -658,6 +717,10 @@ font-size: 12px;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 6px 25px;
     text-align: center;
+}
+
+footer .ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border: solid 1px var(--gray-color) !important;
 }
 
 .topSeller .section-select-filter{
@@ -673,7 +736,9 @@ font-size: 12px;
 }
 
 .topSeller .topSellerUserInfo h5 b{
-    color: var(--pink-color) !important;
+    color: var(--black-color) !important;
+    font-family: "AvertaStd-Semibold" !important;
+    font-size: 18px;
 }
 
 .create-single-section-container .putOnMarketplace:hover{
@@ -745,6 +810,11 @@ font-size: 12px;
     padding: 0 20px;
 }
 
+
+.border-gray{
+    border: solid 1px var(--gray-color) !important;
+}
+
 .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
     box-shadow: none !important;
 }
@@ -753,15 +823,15 @@ font-size: 12px;
     width: 200px !important;
 }
 
-.gray-color{
-    background-color: var(--gray-bg) !important;
+.profile-usr-name-h3-size h3{
+    font-size: 24px !important;
 }
 
 .profile-pictures-infos .profile-pictures-cover{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    min-height: 350px;
+    min-height: 378px;
 }
 
 .flashLightFill{
@@ -840,8 +910,10 @@ font-size: 12px;
     fill: var(--black-color);
 }
 
-.coin-covert-popup-container{
-    width: 470px;
+.place-a-bid-popup-container .popup-width, .coin-covert-popup-container{
+    width: 488px;
+    max-height: calc(100vh - 40px) !important;
+    overflow-y: auto;
 }
 
 .popup-close-btn-exit{
@@ -858,18 +930,23 @@ font-size: 12px;
     border-radius: 50%;
 }
 
+.ant-select-item-option-content{
+    padding: 6px;
+}
+
 .ant-select-item-option-selected:not(.ant-select-item-option-disabled)::after{
     content: '\2713';
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
     border-radius: 50%;
     background-color: #6300FF;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 5px;
+    right: 10px;
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -891,6 +968,11 @@ font-size: 12px;
 
 .sign-in-container-section h5,
 .sign-in-container-section svg path,
+.create-collectible svg path,
+.create-collectible h6,
+.create-single-section-container svg path,
+.create-single-section-container h6,
+.notificationPopup h6,
 .sign-in-container-section h2,
 .sign-in-container-section p{
     color: var(--black-text) !important;
@@ -978,22 +1060,161 @@ font-size: 12px;
     color: var(--black-text);
 }
 
-.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    border: solid 1px var(--black-color);
-}
-
-.following-page-section .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border: solid 1px var(--pink-color);
-}
-
 .following-page-section svg{
     margin-right: 15px;
 }
+
+.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background-color: var(--black-color) !important;
+    color: var(--white-color) !important;
+}
+
+.following-page-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active svg path{
+    fill: var(--white-color) !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color: var(--black-color) !important;
+}
+
 
 .following-page-section .btn-primary-following svg path{
     fill: var(--black-text);
 }
 
 .putOnMarketplace svg path{
+    fill: var(--black-color) !important;
+}
+
+.following-page-section .tab-content .tab-pane{
+    text-align: center;
+}
+
+.following-page-section .following-divition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.following-page-section .nav-tabs .nav-link{
+    align-items: center;
+}
+ 
+.nft-start .home-nft-slider-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.quickExplore .nav-tabs{
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: initial;
+    width: 100%;
+    height: 50px;
+    overflow-x: auto;
+}
+
+.quickExplore .nav-tabs .nav-link{
+    background-color: var(--gray-bg);
+    color: var(--gray-color);
+    border-radius: 30px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ant-input:focus{
+    background-color: red !important;
+}
+
+.following-page-section .tab-content{
+    min-height: 350px;
+}
+
+.following-page-section .nav-link svg path{
+    fill: var(--black-color) !important;
+}
+
+.place-a-bid-popup-container .popup-close-btn-outline{
+    width: 48px;
+    height: 48px;
+    border: solid 1px var(--gray-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -17px -25px 0 0;
+}
+
+.nft-start .home-nft-slider-section .swiper-wrapper .swiper-slide{
+    width: 100%;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+    border-color: var(--pink-color) !important;
+}
+
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: none !important;
+}
+
+.topSellerContent .topSellerCard .topSellerCardImageover {
+    width: 100%;
+    height: 160px;
+}
+
+.topSellerContent .topSellerCard .topSellerCardImageover img {
+    object-fit: cover;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.sign-in-container-section .sig-in-mobile{
+    margin-top: 100px;
+}
+
+.full-screen-images-popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    z-index: 99999;
+    top: 0;
+    padding: 60px 40px;
+}
+
+.full-screen-images-popup .full-screen-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.full-screen-images-popup .full-screen-image-resize{
+    width: 42px;
+    height: 42px;
+    border: solid 1px var(--gray-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 36px;
+    right: 70px;
+}
+
+.full-screen-images-popup .full-screen-image-resize svg path{
+    fill: var(--black-color);
+}
+
+.full-screen-images-popup .full-screen-image-resize:hover{
+    cursor: pointer;
+}
+
+.create-single-section-container .putOnMarketplace svg path{
     fill: var(--black-color) !important;
 }

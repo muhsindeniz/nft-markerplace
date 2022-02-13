@@ -13,8 +13,14 @@ import logo from "../assets/img/custom/cryptoioriaLogo.png";
 import shape from "../assets/img/icons/custom/Shape.svg";
 import fabaLogo from "../assets/img/custom/x.svg";
 import { Menu, Dropdown } from 'antd';
+import { motion } from "framer-motion"
 
 const Cryptoloria = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
 
     const menu = (
         <Menu>
@@ -36,7 +42,10 @@ const Cryptoloria = () => {
     return (
         <>
 
-            <div className="container-fluid p-0 d-flex justify-content-center align-items-center flex-column" style={{ marginTop: "100px" }}>
+            <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="container-fluid p-0 d-flex justify-content-center align-items-center flex-column" style={{ marginTop: "100px" }}>
                 <img src={logo} className="artCryptoLogo" />
                 <div className="cryptoioria-banner-container">
                     <div className="position-absolute text-center d-flex flex-column">
@@ -45,42 +54,44 @@ const Cryptoloria = () => {
                                 <path d="M18.2881 24L17.4619 24.5633L17.7596 25H18.2881V24ZM12.0481 14.848L12.8744 14.2847L12.5766 13.848H12.0481V14.848ZM11.9841 14.848V13.848H11.4556L11.1579 14.2847L11.9841 14.848ZM5.74413 24V25H6.27263L6.57035 24.5633L5.74413 24ZM2.44813 24L1.62293 23.4352L0.551781 25H2.44813V24ZM10.2241 12.64L11.0493 13.2048L11.4336 12.6435L11.0526 12.0799L10.2241 12.64ZM2.54413 1.28V0.279999H0.660988L1.71568 1.84007L2.54413 1.28ZM5.74413 1.28L6.57127 0.718004L6.27367 0.279999H5.74413V1.28ZM11.9841 10.464L11.157 11.026L11.4546 11.464H11.9841V10.464ZM12.0481 10.464V11.464H12.5792L12.8766 11.024L12.0481 10.464ZM18.2561 1.28V0.279999H17.7251L17.4276 0.71998L18.2561 1.28ZM21.4881 1.28L22.3184 1.83739L23.3639 0.279999H21.4881V1.28ZM13.8401 12.672L13.0099 12.1146L12.6323 12.6771L13.0146 13.2363L13.8401 12.672ZM21.5841 24V25H23.4791L22.4097 23.4356L21.5841 24ZM19.1144 23.4367L12.8744 14.2847L11.2219 15.4113L17.4619 24.5633L19.1144 23.4367ZM12.0481 13.848H11.9841V15.848H12.0481V13.848ZM11.1579 14.2847L4.9179 23.4367L6.57035 24.5633L12.8104 15.4113L11.1579 14.2847ZM5.74413 23H2.44813V25H5.74413V23ZM3.27332 24.5648L11.0493 13.2048L9.39893 12.0751L1.62293 23.4352L3.27332 24.5648ZM11.0526 12.0799L3.37257 0.719925L1.71568 1.84007L9.39568 13.2001L11.0526 12.0799ZM2.54413 2.28H5.74413V0.279999H2.54413V2.28ZM4.91698 1.84199L11.157 11.026L12.8113 9.902L6.57127 0.718004L4.91698 1.84199ZM11.9841 11.464H12.0481V9.464H11.9841V11.464ZM12.8766 11.024L19.0846 1.84002L17.4276 0.71998L11.2196 9.90398L12.8766 11.024ZM18.2561 2.28H21.4881V0.279999H18.2561V2.28ZM20.6579 0.72261L13.0099 12.1146L14.6704 13.2294L22.3184 1.83739L20.6579 0.72261ZM13.0146 13.2363L20.7586 24.5644L22.4097 23.4356L14.6657 12.1077L13.0146 13.2363ZM21.5841 23H18.2881V25H21.5841V23Z" fill="black" />
                             </svg>
                         </div>
-                        <a href="javascript:void(0)" className="navbar-brand mb-3 pl-0 mr-0">
+                        <a className="navbar-brand mb-3 pl-0 mr-0">
                             <img src={fabaLogo} width="30" alt="" />
                             <span className="ml-2">Starlight</span>
                         </a>
                         <div className="pl-4 pr-4">
-                        The enchanted universe of Cryptoloria in partnership with Starlight
+                            The enchanted universe of Cryptoloria in partnership with Starlight
                             Exclusive NFT collection drops
                         </div>
-        
-                            <div className="d-flex justify-content-center mt-4">
-                                <div className="crypto-border-right">
-                                        <h4 className="m-0"><b>4</b></h4>
-                                        <div>Days</div>
-                                </div>
 
-                                <div className="crypto-border-right">
-                                        <h4 className="m-0"><b>5</b></h4>
-                                        <div>Hours</div>
-                                </div>
-
-                                <div className="crypto-border-right">
-                                        <h4 className="m-0"><b>43</b></h4>
-                                        <div>Minutes</div>
-                                </div>
-
-                                <div className="ml-4">
-                                    <h4 className="m-0"><b>25</b></h4>
-                                    <div>Seconds</div>
-                                </div>
+                        <div className="d-flex justify-content-center mt-4">
+                            <div className="crypto-border-right">
+                                <h4 className="m-0"><b>4</b></h4>
+                                <div>Days</div>
                             </div>
+
+                            <div className="crypto-border-right">
+                                <h4 className="m-0"><b>5</b></h4>
+                                <div>Hours</div>
+                            </div>
+
+                            <div className="crypto-border-right">
+                                <h4 className="m-0"><b>43</b></h4>
+                                <div>Minutes</div>
+                            </div>
+
+                            <div className="ml-4">
+                                <h4 className="m-0"><b>25</b></h4>
+                                <div>Seconds</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
-
-            <section className="artWorkWeekSection">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="artWorkWeekSection">
                 <div className="container-fluid">
                     <div className="w-100 d-flex justify-content-between align-items-center">
                         <h3><b>msDoge Collection 01</b></h3>
@@ -96,7 +107,7 @@ const Cryptoloria = () => {
                             </div>
                         </div>
 
-                        <div className="col-sm-12 col-md-7 col-lg-7 position-relative">
+                        <div className="col-sm-12 col-md-7 col-lg-7 position-relative home-artwork-week-day">
                             <div className="d-flex overflow-auto">
                                 <div className="position-relative mr-3 mt-3">
                                     <img src={artWorkWeek1} width="230" alt="" />
@@ -141,21 +152,19 @@ const Cryptoloria = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
-
-
-
-
-
-            <section className="liveAuction quickExplore cryptoloria-hidden-bids">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="liveAuction quickExplore cryptoloria-hidden-bids">
                 <div className="container-fluid">
 
                     <div className="d-flex justify-content-between mb-3">
                         <h3><b>Hidden Bids</b></h3>
                     </div>
 
-                    <div className="w-100 headerSelect d-flex justify-content-between">
+                    <div className="w-100 headerSelect">
                         <div className="row">
                             <div className="col-sm-12 col-lg-3">
                                 <div className="liveAuction-card-container cryptoloria-blue-images">
@@ -280,8 +289,7 @@ const Cryptoloria = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </motion.section>
 
         </>
     )

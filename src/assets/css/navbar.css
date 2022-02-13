@@ -2,7 +2,7 @@
 @import '../fonts/stylesheet.css';
 
 header {
-    width: 100%;
+    width: 100% !important;
 }
 
 .navbar {
@@ -10,14 +10,35 @@ header {
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    padding: 20px;
     top: 0;
+    left: 0;
     z-index: 99;
-    background: var(--bg-card);
+    background: var(--bg-main);
     width: 100%;
+}
+
+@media only screen and (max-width: 992px){
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
 }
 
 .navbar .menu-dropdown{
     width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-dark-button{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .navbar .menu-dropdown li{
@@ -25,14 +46,19 @@ header {
     padding: 0;
     list-style-type: none !important;
     padding: 6px 10px;
+    font-size: 14px;
     color: var(--black-color);
+    font-family: "AvertaStd-Semibold";
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .navbar .menu-dropdown li:hover{
     color: var(--white-color) !important;
     cursor: pointer !important;
-    background-color: var(--black-color);
-    border-radius: 6px;
+    background-color: var(--pink-color);
+    border-radius: 30px;
 }
 
 /* article {
@@ -58,9 +84,9 @@ section{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--black-color);
-    font-weight: 500;
+    font-family: "AvertaStd-Semibold";
 }
 
 .navbar .nav-item {
@@ -72,11 +98,6 @@ section{
 /* breakpoint and up - mega dropdown styles */
 
 @media screen and (min-width: 767px) {
-    /* remove the padding from the navbar so the dropdown hover state is not broken */
-    .navbar {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
     /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
     .navbar .nav-item {
         padding: .5rem .5rem;
@@ -130,9 +151,11 @@ section{
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link svg path {
     color: var(--black-color) !important;
-    background-color: var(--bg-card);
+    background-color: var(--bg-main);
+    fill: var(--black-color) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -146,7 +169,8 @@ section{
 }
 
 .navbar-light .navbar-toggler {
-    border: none;
+    border: var(--white-color) !important;
+    background: var(--white-color) !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -180,38 +204,37 @@ section{
 
 .dropdown-toggle::after {
     display: inline-block !important;
-    width: .5rem !important;
-    height: .5rem !important;
-    border: 0.125rem solid !important;
-    border-bottom: 0 !important;
-    border-left: 0 !important;
-    border-radius: 1px !important;
-    text-indent: -624.9375rem !important;
     margin-left: 10px;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    transform: rotate(135deg) translateY(0px);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg) translateY(10px);
     transition: linear .2s all;
+    border-color: var(--black-color) transparent transparent transparent;
+    border-style: solid !important;
+    border-width: .4rem !important;
+    width: 0px !important;
+    height: 0px !important;
 }
 
 .dropdown:hover>.dropdown-toggle::after {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
     transition: linear .2s all;
 }
 
 .navbar-search {
-    min-width: 320px;
+    min-width: 300px;
     background-color: var(--gray-bg);
     padding: 10px 16px;
     border: solid 2px var(--gray-bg);
     border-radius: 30px;
     outline: none;
+    max-height: 48px;
     display: flex;
     font-size: 12px;
 }
@@ -220,14 +243,11 @@ section{
     color: var(--black-text) !important;
 }
 
-footer section .footer-in-email{
-    background-color: var(--gray-bg);
-}
-
 .navbar-search input {
     border: none;
     outline: none;
     width: 100%;
+    font-size: 12px !important;
     padding: 0 15px;
     background: none;
     color:  var(--black-text) !important;
@@ -251,7 +271,12 @@ footer section .footer-in-email{
 }
 
 .nav-dark-button path{
-    fill: var(--black-color) !important;
+    fill: #333 !important;
+}
+
+.nav-dark-button svg{
+    width: 18px !important;
+    height: 18px !important;
 }
 
 .navbar-nav .dropdown .nav-bar-social-items{
@@ -306,7 +331,7 @@ footer section .footer-in-email{
 
 .notificationPopup{
     padding: 20px;
-    background-color: var(--bg-white);
+    background-color: var(--bg-main);
     border-radius: 15px;
     position: absolute;
     top: 50px;
@@ -337,4 +362,28 @@ footer section .footer-in-email{
     position: absolute;
     right: 10px;
     top: 10px;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: var(--pink-color);
+    background-color: var(--pink-color);
+}
+
+.ant-select-arrow .anticon{
+    display: none !important;
+}
+
+.ant-select-arrow{
+    display: inline-block !important;
+    margin-left: 10px !important;
+    transform: rotate(
+0deg) translateY(10px) !important;
+    transition: linear .2s all !important;
+    border-color: var(--black-color) transparent transparent transparent;
+    border-style: solid !important;
+    border-width: .4rem !important;
+    width: 0px !important;
+    height: 0px !important;
+    margin-top: -12px !important;
+    right: 20px !important;
 }

@@ -21,11 +21,11 @@ import SignIn from './Pages/SignIn';
 import Token from './Pages/Token';
 import Activity from './Pages/Activity';
 import Following from './Pages/Following';
-import FullScreenImage from './Pages/FullScreenImage';
+import Cryptoloria from './Pages/Cryptoloria';
+import FullScreenImage from './Components/Popup/FullScreenImage';
 import CreateCollectibleMultiplePopup from './Components/Popup/CreateCollectibleMultiplePopup';
 import FinishedCollectiblePopup from './Components/Popup/FinishedCollectiblePopup';
 import PlaceABidPopup from './Components/Popup/PlaceABidPopup';
-import Cryptoloria from './Pages/Cryptoloria';
 import PlaceABidFollowPopup from './Components/Popup/PlaceABidFollowPopup';
 import CoinConverPopup from './Components/Popup/CoinConverPopup';
 
@@ -48,7 +48,6 @@ const App = () => {
                     <Route path="/Following" component={Following} exact />
                     <Route path="/SignIn" component={SignIn} exact />
                     <Route path="/Token" component={Token} exact />
-                    <Route path="/FullScreenImage" component={FullScreenImage} exact />
                     <Route path="/Activity" component={Activity} exact />
                     <Route path="/Buy" component={Buy} exact />
                     <Route path="/CollectibleMultiInfo" component={CollectibleMultiInfo} exact />

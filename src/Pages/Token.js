@@ -1,11 +1,20 @@
 import React from 'react'
 import tokenLogo from "../assets/img/custom/tokenLogo.svg";
+import { motion } from "framer-motion"
 
 const Token = () => {
+
+    const variants = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+    }
+
     return (
         <>
-
-            <section className="create-single-section-container token-page-section">
+            <motion.section
+                initial="hidden"
+                animate="visible"
+                variants={variants} className="create-single-section-container token-page-section">
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-sm-12 col-lg-7 token-page-section-content">
@@ -40,15 +49,10 @@ const Token = () => {
                                     <li class="StepProgress-item" data-step="4"><strong>-50% for NFTs created not on Rarible.com</strong></li>
                                 </ul>
                             </div>
-
                         </div>
-
-
                     </div>
-
                 </div>
-
-            </section>
+            </motion.section>
 
         </>
     )

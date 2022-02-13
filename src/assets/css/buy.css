@@ -6,7 +6,9 @@
 }
 
 .buy-art-work-week-card {
-    background-color: var(--bg-main);
+    background-color: var(--bg-main-white);
+    border: solid .5px var(--light-gray);
+    padding: 30px;
 }
 
 .buy-art-work-week .card-heart-icon {
@@ -63,10 +65,10 @@
 }
 
 .buy-art-work-week .tab-pane-bottom-solid {
-    background: linear-gradient(139.9deg, #FFAB2D 1.52%, #F45959 53.55%, #E730BE 99.46%);
+    background: var(--gray-color);
     border-radius: 5px;
     width: 100%;
-    height: 5px;
+    height: 1px;
 }
 
 
@@ -154,8 +156,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 170px !important;
-    max-height: 160px;
+    width: 170px;
+    height: 170px;
 }
 
 .create-single-section-container .putOnMarketplace b {
@@ -206,8 +208,8 @@
 
 .profile-pictures-infos .profile-upload,
 .profile-pictures-infos .select {
-    width: 80px;
-    height: 35px;
+    width: 48px !important;
+    height: 48px !important;
     border-radius: 50%;
     display: flex;
     justify-content: center;

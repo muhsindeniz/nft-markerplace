@@ -16,6 +16,20 @@
     }
     .nft-start-counter {
         justify-content: center !important;
+        margin-top: 20px !important;
+        align-items: center !important;
+    }
+
+    .order-sm-1{
+        order: 1 !important;
+    }
+
+    .order-sm-2{
+        order: 2 !important;
+    }
+
+    .order-sm-3{
+        order: 3 !important;
     }
 
     .token-page-section .connect-wallet-section{
@@ -50,6 +64,12 @@
         display: flex;
         justify-content: center;
     }
+
+    .nft-start .home-nft-slider-section{
+        align-items: center !important;
+        margin-top: 0 !important;
+    }
+
     .d-mobile-none {
         display: none !important;
     }
@@ -135,6 +155,9 @@
 
 .swiper-button-prev, .swiper-button-next{
     top: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 
@@ -261,9 +284,83 @@
     width: 100% !important;
 }
 
+.quickExplore h3{
+    font-size: 20px !important;
+}
+
+.following-page-section .following-divition{
+    flex-direction: column !important;
+}
+
+.following-page-section .nav-tabs{
+    flex-wrap: initial !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    width: 100% !important;
+    min-height: 60px !important;
+}
+
+.following-page-section .nav-tabs .nav-link{
+    display: flex !important;
+    align-items: center !important;
+    min-width: 180px !important;
+}
+
+.nft-start .home-banner-description{
+    justify-content: center !important;
+}
+
+.home-artwork-week-day{
+    margin-top: 30px !important;
+}
+
+header .navbar{
+    padding: 15px 10px !important;
+}
+
+.artWork-of-the-week-overflow{
+    overflow: auto !important;
+}
+
+.liveAuction-mobile-margin{
+    margin-top: 25px !important;
+}
+
+.nft-start .home-center{
+    margin: auto auto;
+}
+
+h1{
+    font-size: 32px !important;
+}
+
+h2{
+    font-size: 28px !important;
+}
+
+h3{
+    font-size: 26px !important;
+}
+
+h4{
+    font-size: 24px !important;
+}
+
+h5{
+    font-size: 14px !important;
+}
+
+
+h6{
+    font-size: 12px !important;
+}
+
+
     /*
         NFT MarketPlace Start
     */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   
+}

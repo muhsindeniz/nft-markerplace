@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {AnimateSharedLayout} from 'framer-motion';
 
 ReactDOM.render(
   <React.StrictMode>
+    <AnimateSharedLayout>
     <App />
+    </AnimateSharedLayout>
   </React.StrictMode>,
   document.getElementById('root')
 );
